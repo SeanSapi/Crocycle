@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Fred";
+    src: url("../Fonts/Fredoka.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Mont";
+    src: url('../Fonts/Montserrat.ttf') format('truetype');
+}
+
+
+/* import Montserrat font */
+
+/* Header CSS Section */ 
+/* ------------------------------------------------------------------------------------------------- */
+.banner{
+    background-image:url("/Crocycle/StockImages/Icons/CrocyleHeaderImg.png");
+    
+}
+.header{
+    /*padding: 40px 45px;*/
+    padding: 15px 15px;
+    
+
+    color:white;
+    font-family: Mont; /*use the Frederika font and color*/
+    display:flex;
+    justify-content:space-between;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+}
+/*manages the header class*/
+.header a{
+    color:white;
+}
+.header:before{
+    background-size:100%;
+    background-attachment: fixed;
+    animation: grow 360s  linear 10ms infinite;
+    transition:all 0.4s ease-in-out;
+    background-repeat: no-repeat;
+    z-index:-2
+}
+
+.options{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 15%;
+  width: 65%;
+}
+.options a{
+  text-decoration:none;
+  text-shadow: 2px 2px #645a56;
+}
+.welcome{ /* manages the welcome class, which has the welcome text */
+    
+  height: 50px; /* sets the height to 50px and width to 100%*/
+  width: 100%;
+  position: absolute; /* position is absolute, independent of any settings its parent objects have*/
+  
+  z-index:1; /* z-index to 1 so its over the banner*/
+  color:white; /* text color is white */
+}
+.welcome div{ /* manages any divs within .welcome class */
+    
+  height: 100%; /* height is 100% */
+  display:flex; 
+  justify-content: center;
+  align-items: center; /* display to flex, centered with justify-content and align-items */
+  flex-direction:column; /* flex direction is column, meaning objects are stacked vertically*/
+}
+.welcome h1{ /* manages h1 objects inside welcome class*/
+    font-family:HighC; /* font family is High Cruiser */
+    font-size: 60px; /* 60px font size */
+}
+.welcome h3{  /* manages h3 objects inside welcome class*/
+    font-family:MontR; /* font family is Montserrat Regular */
+    font-weight:lighter; /* font weight is set to lighter, meaning thinner looking text */
+    
+}
+/* Footer CSS Section */
+/* ------------------------------------------------------------------------------------------------- */
+/* declares Fredoka font */
+footer{
+    height: 100%; /* height is 100% */
+    font-family: Fred;
+    font-weight: 100;
+    display: flex;
+    align-items: flex-start;
+    background-color: #A84448;
+
+    /* uses font-family Fred, sets display to flex and align-items to flex-start */
+    
+    color: white;
+
+    /* font color is white */
+
+    margin-top: auto;
+
+    /* makes its margin fill the space between it and its previous sibling in the main html */
+
+    justify-content:space-between;
+
+    /* justify-content set to space-between, bottom is 0 so */
+    
+    padding: 35px 40px;
+
+    /* top and bottom padding is 35px while right and left is 40px */    
+}
+
+/*changes size of the header*/
+footer h1{
+    font-size: 15px;
+}
+footer a{
+    font-size: 13px;
+}
+
+/*removes bullets on the list*/
+footer div{
+    list-style-type: none;
+}
+
+/*adds spacing to the links*/
+footer div li{
+    padding: 10px;
+}

@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Mont";
+    src: url("../Fonts/Montserrat.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "MontR";
+    src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+  
+  }
+  
+  @font-face {
+    font-family: "HighC";
+    src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Fred";
+    src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
+  }
+  /*
+  
+  * {
+    Used for debugging objects and space, remove when done 
+    border: 1px solid red;
+    
+     adds a solid red border to everything 
+  }
+  */
+  body {
+    background-color: #F6E1C3;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header{    
+    height:300px;
+    background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
+   
+  }
+  .welcome{
+    
+    top: 145px; /* sets its distance from the top to 135px */
+  }
+  
+  
+  /*Description page*/
+  .info {
+  
+    display: flex;
+  
+    flex-direction: column;
+    flex: 1 1 100%;
+    width:100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9A178;
+    margin-bottom: 10px;
+    font-family:HighC;
+    font-size:30px;
+  }
+
+  .info .mot{
+    display:flex;
+    align-items:center;
+    font-family:HighC;
+  }
+  .staff{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    margin: 10px 20px;
+  }
+  .staffimg {  
+    
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width:40%;
+  }
+  .staffimg img{
+    
+    object-fit: cover;
+    
+    width:95%;
+    height:495px;
+  }
+  .staffimg h3 {
+    font-family: Mont;
+    font-size:17px;
+    
+    text-align: center
+  }
+  .staffimg p {
+    font-family: Mont;
+    font-size:15px;
+    text-align: center;
+  }
+  
+  .info:nth-of-type(2) {
+    /* selects the first instance of this waw class */
+    margin-top: 5%;
+    /* add some slight margin on top */
+  }
+  
+  .textdiv {
+    /* container for the text description */
+  
+    padding: 56px;
+    /* padding */
+    word-wrap: break-word;
+    /*  add line break when the text reaches the end of the width */
+    width: 100%;
+    /* set width of the text object to 500 px */
+    text-align: justify;
+    /* set to justify alignment */
+  
+  }
+  .banner2{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+  .banner2 img{
+     
+     width:100%;
+     height:100%;
+     max-height:450px;
+    
+     object-fit: cover;
+  }
+  .ab{ /* manages the welcome class, which has the welcome text */
+    
+    
+    width: 100%;
+    position: absolute; /* position is absolute, independent of any settings its parent objects have*/
+    
+    z-index:1; /* z-index to 1 so its over the banner*/
+    color:white; /* text color is white */
+  }
+  .ab div{ /* manages any divs within .welcome class */
+      
+    height: 100%; /* height is 100% */
+    display:flex; 
+    justify-content: center;
+    align-items: center; /* display to flex, centered with justify-content and align-items */
+    flex-direction:column; /* flex direction is column, meaning objects are stacked vertically*/
+  }
+  .ab h1{ /* manages h1 objects inside welcome class*/
+      font-family:HighC; /* font family is High Cruiser */
+      font-size: 60px; /* 60px font size */
+  }
+
+  .waw {
+    /* manages waw class */
+  
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+   
+    margin-bottom: 10px;
+  }
+
+  .waw h1 {
+    /* manages the h1 objects inside the waw class */
+    font-family: HighC;
+    /* set font used for h1 to High Cruzer */
+  }
+  
+  .waw p {
+    /* manages the p objects inside waw classes */
+    font-size: 15px;
+    /* set to 15px*/
+    font-family: MontR;
+    font-weight:bold;
+    
+    /* set to Montserrat font */
+  }
+  
+  ul {
+    /* manages ul objects */
+    list-style: none;
+    /* removes list styles (bullets, numbers, etc.) */
+  }
+  
+  

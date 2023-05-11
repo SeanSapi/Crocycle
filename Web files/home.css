@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Mont"; /*Mont for general text*/
+  src: url("../Fonts/Montserrat.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "MontR";
+  src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+
+}
+
+@font-face {
+  font-family: "HighC"; /*HighC for Headers*/
+  src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fred";
+  src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
+}
+
+/* {
+  /*Used for debugging objects and space, remove when done 
+  border: 1px solid red;
+  /* adds a solid red border to everything 
+}
+*/
+body {
+  background-color: #F6E1C3;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{    
+  height:300px;
+  background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
+ 
+}
+.welcome{
+  
+  top: 115px; /* sets its distance from the top to 115px */
+}
+
+/* placeholder image currently, replace when the images are available - John */
+.imgdiv {
+  object-fit: contain;
+  /* set to object-fit contain, the full image will be displayed as best as possible */
+  flex-grow: 2;
+  /* set the grow of the class to 2 */
+  width: 100%;
+  /* set to full page width for both width and height */
+
+}
+
+.imgdiv img {
+  vertical-align: bottom;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* create new div class to create the "2-to-1" image layout for the 2nd and 3rd info boxes as designed in the figma */
+.imgdiv2 {
+  object-fit: contain;
+  /* set to object-fit contain, the full image will be displayed as best as possible */
+  flex-grow: 2;
+  /* set the grow of the class to 2 */
+  width: 100%;
+  height: 100%;
+  /* set to full page width for both width and height */
+  display: flex;
+  /* set display to flex for flexbox use */
+
+}
+
+.imgdiv2 img {
+  /* manage imgdiv2's img objects, same settings as imgdiv1's img objects */
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.bigLeft,
+.smallRight {
+  /* manages both .bigLeft and .smallRight class in imgdiv2 */
+  flex: 1;
+  /* set flex space to 1 (the biggest) */
+  display: flex;
+  flex-direction: column;
+  /* display set to flex and direction to column*/
+}
+
+.smallRight div {
+  /* set the divs (inside .smallRight) containing the imgs */
+  flex: 2;
+  /* */
+}
+
+
+/*Description page*/
+.waw {
+  /* manages waw class */
+
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #E9A178;
+  margin-bottom: 10px;
+}
+
+.waw:nth-of-type(2) {
+  /* selects the first instance of this waw class */
+  margin-top: 5%;
+  /* add some slight margin on top */
+}
+
+.waw:nth-of-type(3) {
+  /* selects the 2nd instance of this waw class */
+  background-color: #E9A178;
+}
+
+.waw:last-of-type {
+  /* selects the last instance of this waw class */
+  margin-bottom: 5%;
+  /* add some slight margin below the object */
+}
+
+.textdiv {
+  /* container for the text description */
+
+  padding: 56px;
+  /* padding */
+  word-wrap: break-word;
+  /*  add line break when the text reaches the end of the width */
+  width: 500px;
+  /* set width of the text object to 500 px */
+  text-align: justify;
+  /* set to justify alignment */
+
+}
+
+.waw h1 {
+  /* manages the h1 objects inside the waw class */
+  font-family: HighC;
+  /* set font used for h1 to High Cruzer */
+}
+
+.waw p {
+  /* manages the p objects inside waw classes */
+  font-size: 15px;
+  /* set to 15px*/
+  font-family: Mont;
+  /* set to Montserrat font */
+}
+
+ul {
+  /* manages ul objects */
+  list-style: none;
+  /* removes list styles (bullets, numbers, etc.) */
+}
+
+
+
+/*Slider*/
+
+.swiper-wrapper {
+  /* Padding added to keep the slide buttons from overlapping with the view buttons*/
+  padding-bottom: 25px;
+}
+
+.slider-section h1 {
+  /* manages slider-section h1 objects*/
+  font-family: HighC;
+  /*Uses High Cruiser Font*/
+  padding: 0 45px;
+  /* set top and bottom padding to 0 while sde padding is 45px*/
+  height: 100%;
+  /* full page height */
+}
+
+.slider-box {
+  /* manages slider-box class */
+  width: 100%;
+  /* full page width */
+  max-width: 500px;
+  /* set max-width allowed to be 500px */
+  margin: 30px auto;
+  /* set top and bottom margin to 60px and side margin to auto*/
+}
+
+.slider-img {
+  /* manages slider-img class */
+  width: 100%;
+  /* full page width */
+  display: flex;
+  /*set to flex */
+  overflow: hidden;
+  /* hides any overflow */
+  z-index: 1;
+  /* set z-index to 1, for placing items behind or on front*/
+  
+  justify-content: center;
+  /* centers objects inside it */
+
+}
+
+.slider-img img {
+  /* manages the imgs inside slider-img classes */
+  /*width: 100%;
+    height: 100%;  sets height and width to 100% */
+  width: 645px;
+  height: 600px;
+  max-height: 520px;
+  max-width: 400px;
+  object-fit: cover;
+  /* sets the img to be fully 'contained' */
+  object-position: center;
+  /* centers the object */
+
+  border-radius: 5px;
+}
+
+.slider-txt {
+  margin-top: 465px;
+  /* Places this at the bottom of the slider image */
+  position: absolute;
+  /* makes the position independent of the parent object's settings*/
+  z-index: 2;
+  /* puts this on top of the slider image (slider image is on z-index: 1) */
+  font-family: Mont;
+  /*use the Mont font and color*/
+  transition: ease-out 1.5s;
+  /*drops down the view buttons for presentation*/
+  vertical-align: bottom;
+  /*Aligns the slider text to the bottom of the frame*/
+}
+
+.slider-txt a {
+  transition: ease-out 1.5s;
+}
+
+.slider-txt:hover a {
+  font-size:30px
+}
+
+@media only screen and (min-width: 1080px) {
+  .slider-txt {
+    margin-top: 465px;
+  }
+}
+
+.slider-txt a {
+  /* manages links inside slider-txt */
+  object-position: center;
+  /* positions to be center */
+  font-size: 25px;
+  /* font size is 25px */
+  font-weight: bold;
+  /* boldens the font */
+  color: white;
+  text-decoration: none;
+  /* removes text decoration */
+  text-shadow: 2px 2px #645a56;
+  /* adds slight shadow on the link text */
+}
