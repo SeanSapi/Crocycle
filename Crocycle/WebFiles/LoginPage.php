@@ -51,13 +51,13 @@ if (!empty($_POST['user']) && !empty($_POST['pass'])) {
 
     <div class="bgclass">
     <div class ="logo">
-      <img src="/Crocycle/Images/Logo/Crocyle Logo.png" height="60%" width="60%"></img>
+      <img src="/Crocycle/Images/Logo/crocyclelogo.png" height="60%" width="60%"></img>
     </div>
 
     <div class="section">
        
         <div class="parallax">
-            <img src="/Crocycle/Images/StockImages/ParallImg.png" alt="Parallax Background"/>
+            <img src="./Crocycle/Images/StockImages/parallimg.png" alt="Parallax Background"/>
         </div>
 
         <div class="inputsection">
