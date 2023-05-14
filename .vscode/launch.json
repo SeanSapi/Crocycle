@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open Main.html",
-            "file": "c:\\Users\\Sapit\\Documents\\BSU\\Year 3\\Creative Incubator\\Crocycle\\Web files\\Main.html"
+            "file": "c:\\Users\\Sapit\\Documents\\BSU\\Year 3\\Creative Incubator\\Crocycle\\Web files\\.html"
         }
     ]
 }
