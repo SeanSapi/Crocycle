@@ -1,0 +1,163 @@
+<!-- This is the html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/Crocycle/WebFiles/headerfooter.css">
+    <link rel="stylesheet" href="Checkout.css">
+
+
+</head>
+
+<body>
+
+    <div class="banner">
+
+        <div class="header">
+
+            <!-- a hrefs lead to #, replace with the actual links-->
+
+            <img src="/Crocycle/Images/Logo/Crocyle Logo.png" height="75px" width="75px" class="croLogo"> </img>
+
+            <div class="options">
+                <!-- Hyperlinks that transfers you to other pages -->
+                <a href="/Crocycle/WebFiles/">
+                    <h3>HOME</h3>
+                </a>
+
+                <a href="/Crocycle/WebFiles/Shop.html">
+                    <h3>SHOP</h3>
+                </a>
+
+                <a href="/Crocycle/WebFiles/About.html">
+                    <h3>ABOUT US</h3>
+                </a>
+
+                <a href="/Crocycle/WebFiles/LoginPage.html">
+                    <h3>LOG IN/SIGN UP</h3>
+                </a>
+
+                <a href="#"><img src="/Crocycle/Images/Icons/Basket.png" /> </a>
+
+                <a href="#"><img src="/Crocycle/Images/Icons/Search.png" /> </a>
+            </div>
+
+        </div>
+
+        <div class="welcome"> <!-- div class for the "Welcome to Crocycle" text on the banner-->
+
+            <div>
+                <h1>Checkout</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="rcpt"> <!-- div that contains the checkout forms and items as a whole -->
+
+        <div class="credits"> <!-- This div class is for containing the buttons for the credit card companies -->
+            <!-- These are for credit card company buttons, non-functional -->
+            <div class="pap"><img src="/Crocycle/Images/Icons/paypal.png" /></div>
+
+            <div class="amazon"><img src="/Crocycle/Images/Icons/amazon.png" /></div>
+
+            <div class="google"><img src="/Crocycle/Images/Icons/google.png" /></div>
+        </div>
+
+        <hr style="width:100%;background-color:white;text-align:left; padding: 2px; border: 0;"> <!-- hr to add space between the card payment options and contact info -->
+
+        <div class="checkout-forms">
+            <!-- this class contains the input forms for the checkout-->
+
+            <div class="contact-section">
+                <!-- input form for the contact informaton-->
+                <h1>Contact Information</h1>
+                <!-- These input forms are not actually functional-->
+                <form class="contactinfo">
+                    <input type="text" name="Contact" id="contact" placeholder="Ex. 1502 Green St.">
+                </form>
+            </div>
+
+            <div class="address-section"> <!-- Wrapping section for the address input forms -->
+                <h1>Address</h1>
+                <form class="address"> <!-- for names -->
+                    <input type="text" name="Fname" id="Fname" placeholder="First Name">
+                    <input type="text" name="Lname" id="Lname" placeholder="Last Name">
+
+                </form>
+
+                <form class="address2"> <!-- input forms for address info-->
+                    <input type="text" name="City" id="City" placeholder="City">
+                    <input type="text" name="Strtadd" id="Strtadd" placeholder="Street Address">
+                    <input type="text" name="PstlCde" id="PstlCde" placeholder="Postal Code">
+                    <input type="text" name="State" id="State" placeholder="State">
+
+                </form>
+            </div>
+
+            <div class="gift-section"> <!-- div class for the gift voucher input-->
+                <h1>Gift Voucher</h1>
+                <form class="voucher"> <!-- Text form inputs to input a gift card code -->
+                    <input type="text" name="Voucher" id="Voucher" placeholder="Input Gift Card Code">
+                </form>
+            </div>
+
+            <div class="cnfrm"> <!-- final row to confirm the purchase -->
+                <a class="cart" href="#">
+                    <h3>< RETURN TO CART </h3> <!-- button to return to cart page -->
+                </a>
+                <a class="buy" href="#"> <!-- Button to confirm the purchae -->
+                    <h3> PURCHASE </h3>
+                </a>
+            </div>
+
+
+        </div>
+
+        <hr>
+
+    </div>
+
+    <footer class="bottom">
+        <div>
+            <h1>CONTACT US</h1>
+            <hr>
+            <li><a>crocycleinfo@info.ae</a></li>
+            <li><a>00000000</a></li>
+            <li><a>RAKEZ Academic Zone, Ras Al Khaimah, U.A.E</a></li>
+        </div>
+
+        <div>
+            <h1>LINKS</h1>
+            <hr>
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>About</a> </li>
+        </div>
+
+        <div>
+            <h1>FOLLOW</h1>
+            <hr>
+            <a><img src="/Crocycle/Images/Socials/Facebook.png"></a>
+            <a><img src="/Crocycle/Images/Socials/Instagram.png"></a>
+            <a><img src="/Crocycle/Images/Socials/TikTok.png"></a>
+        </div>
+
+        <div class="Foot Logo">
+            <img src="/Crocycle/Images/Logo/Crocyle Logo.png" height="50%" width="50%"></img>
+            <p>@Crocycle 2023</p>
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
