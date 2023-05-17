@@ -32,7 +32,7 @@ body{
  position: relative;
  width: 100vw;
  /*background-image: url(/Crocycle/Images/StockImages/LogPageBG.png);*/
- background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('/Crocycle/Images/StockImages/LogPageBG.png');
+ background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/StockImages/logpagebg.png');
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: 100% 100%;
