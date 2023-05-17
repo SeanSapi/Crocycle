@@ -37,7 +37,7 @@
 
   .header{    
     height:300px;
-    background-image: url(/Crocycle/Images/StockImages/CrocyleHeaderImg.png);
+    background-image: url("../Crocycle/Images/StockImages/CrocyleHeaderImg.png");
    
   }
   .welcome{
@@ -81,6 +81,7 @@
     display:flex;
     align-items:center;
     flex-direction:column;
+  
     width:40%;
   }
   .staffimg img{
@@ -93,7 +94,6 @@
   .staffimg h3 {
     font-family: Mont;
     font-size:17px;
-    
     text-align: center
   }
   .staffimg p {

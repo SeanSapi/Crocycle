@@ -5,18 +5,18 @@
   
   @font-face {
     font-family: "MontR";
-    src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+    src: url("../Fonts/MontserratReg.ttf") format('truetype');
   
   }
   
   @font-face {
     font-family: "HighC";
-    src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+    src: url("../Fonts/HighCruiser.ttf") format('truetype');
   }
   
   @font-face {
       font-family: "Fred";
-      src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
+      src: url("../Fonts/Fredoka.ttf") format('truetype');
   }
 
   /*

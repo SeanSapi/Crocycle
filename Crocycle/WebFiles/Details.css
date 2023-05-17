@@ -1,17 +1,17 @@
 @font-face {
     font-family: "MontR";
-    src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+    src: url("../Fonts/MontserratReg.ttf") format('truetype');
   
   }
   
   @font-face {
     font-family: "HighC";
-    src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+    src: url("../Fonts/HighCruiser.ttf") format('truetype');
   }
   
   @font-face {
       font-family: "Fred";
-      src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
+      src: url("../Fonts/Fredoka.ttf") format('truetype');
   }
   /* Font families imported */
   .inputsection h1{
@@ -31,7 +31,7 @@
    overflow: hidden;
    position: relative;
    width: 100vw;
-   background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('/Crocycle/Images/StockImages/LogPageBG.png');
+   background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/StockImages/LogPageBG.png');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: 100% 100%;

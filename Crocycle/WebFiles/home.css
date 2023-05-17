@@ -5,26 +5,26 @@
 
 @font-face {
   font-family: "MontR";
-  src: url("/Crocycle/Fonts/MontserratReg.ttf") format('truetype');
+  src: url("../Fonts/MontserratReg.ttf") format('truetype');
 
 }
 
 @font-face {
   font-family: "HighC"; /*HighC for Headers*/
-  src: url("/Crocycle/Fonts/HighCruiser.ttf") format('truetype');
+  src: url("../Fonts/HighCruiser.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "Fred";
-  src: url("../Crocycle/Fonts/Fredoka.ttf") format('truetype');
+  src: url("../Fonts/Fredoka.ttf") format('truetype');
 }
 
-/* {
+* {
   /*Used for debugging objects and space, remove when done 
-  border: 1px solid red;
-  /* adds a solid red border to everything 
+ 
+  /* adds a solid red border to everything */
 }
-*/
+
 body {
   background-color: #F6E1C3;
   margin: 0;
@@ -62,6 +62,7 @@ body {
 
 /* create new div class to create the "2-to-1" image layout for the 2nd and 3rd info boxes as designed in the figma */
 .imgdiv2 {
+  
   object-fit: contain;
   /* set to object-fit contain, the full image will be displayed as best as possible */
   flex-grow: 2;
@@ -77,6 +78,8 @@ body {
 .imgdiv2 img {
   /* manage imgdiv2's img objects, same settings as imgdiv1's img objects */
   vertical-align: bottom;
+  
+  object-fit: fill;
   height: 100%;
   width: 100%;
 }

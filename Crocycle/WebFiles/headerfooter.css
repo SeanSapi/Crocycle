@@ -13,7 +13,7 @@
 /* Header CSS Section */ 
 /* ------------------------------------------------------------------------------------------------- */
 .banner{
-    background-image:url("/Crocycle/Images/StockImages/crocheader.png");
+    background-image:url("../Images/StockImages/crocheader.png");
     
 }
 .header{
@@ -22,7 +22,7 @@
     
 
     color:white;
-    font-family: Mont; /*use the Frederika font and color*/
+    font-family: Mont; /*use the Mont font and color*/
     display:flex;
     justify-content:space-between;
     background-position: 50% 50%;

@@ -61,7 +61,6 @@
                 <input class="btn" type="submit" name="signin" id="signin" value="S I G N  U P ">
 
                 <br><br>
-                <p>Forgot Password? <a href="ForgetPass.html">Click here</a></p>
 
             </div>
         </div>
