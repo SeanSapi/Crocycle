@@ -29,7 +29,7 @@
 
                 <h1>Crocycle</h1>
 
-                <form class="inline" action="" method="post" autocomplete="off">
+                <form class="inline" action="auth.php" method="post" autocomplete="off">
 
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
@@ -53,6 +53,9 @@
 
                 <br><br>
                 <p>Don't have an account? <a href="Register.php">Click here to Register</a></p>
+
+                
+                <p>Forgot Password? <a href="ForgetPass.html">Click here to Reset</a></p>
 
             </div>
         </div>

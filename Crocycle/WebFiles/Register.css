@@ -26,26 +26,29 @@ body{
  margin: 0;
  
 }
+
 .bgclass{
- height: 100vh;
- overflow: hidden;
- position: relative;
- width: 100vw;
- /*background-image: url(/Crocycle/Images/StockImages/LogPageBG.png);*/
- background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/StockImages/logpagebg.png');
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: 100% 100%;
- display: flex;
- align-items:center;
- justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /*background-image: url(/Crocycle/Images/StockImages/LogPageBG.png);*/
+  background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/StockImages/logpagebg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:center;
+  justify-content: center;
 }
 
 /*Crocycle Logo*/
 .logo{
-   position: relative;
-   left: 500px;
-   top: -200px;
+  display: flex;
+  justify-content: center;
+  transform: 
+  translate(125px, 80px);
 }
 
 /*Media Query Section*/
@@ -70,7 +73,6 @@ body{
 
 /* this section class manages the div where the content is in */
 .section{
-    margin-right:200px;
     margin-top: 2%;
     /* manages the position of the section div */
     background-color: #A96262;
@@ -81,7 +83,7 @@ body{
     justify-content: center;
     /* centers the objects within */
     height: 500px;
-    width: 55%;
+    width: 50%;
     /* manages the height and width */
     border-radius: 15px;
     overflow:hidden;

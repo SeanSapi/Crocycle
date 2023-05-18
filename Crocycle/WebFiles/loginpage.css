@@ -46,7 +46,8 @@ body{
 .logo{
   display: flex;
   justify-content: center;
-  transform: translateY(80px);
+  transform: 
+  translate(140px, 80px);
 }
 
 .logo img {

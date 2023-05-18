@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="Register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,7 +26,7 @@
 
             <div class="inputsection">
 
-                <h1>Crocycle</h1>
+                <h1>Register</h1>
 
                 <form class="inline" action="auth.php" method="post" autocomplete="off">
 
@@ -42,8 +42,11 @@
                         <input style="border: none;" class="input-field" type="password" name="Passw" id="Passw" placeholder="Password" />
                     </div>
 
+                    <br>
+
                     <div class="inputs">
-                        <input type="text" class="Email" name="Email" id="Email" placeholder="Email" />
+                    <i class="fa fa-envelope"></i>
+                        <input style="border: none;" type="text" class="Email" name="Email" id="Email" placeholder="Email" />
                     </div>
 
                     <!-- Considering this is a registration area, will we also add an Email section?
@@ -58,13 +61,12 @@
 
                 <br><br>
 
-                <input class="btn" type="submit" name="signin" id="signin" value="S I G N  U P ">
-
-                <br><br>
 
             </div>
         </div>
 
+        <br><br>
+                <br><br>
     </div>
 </body>
 
