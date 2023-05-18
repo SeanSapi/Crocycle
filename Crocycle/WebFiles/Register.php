@@ -28,7 +28,7 @@
 
                 <h1>Register</h1>
 
-                <form class="inline" action="auth.php" method="post" autocomplete="off">
+                <form class="inline" action="../WebFiles/PurePHP/auth.php" method="post" autocomplete="off">
 
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
@@ -48,10 +48,6 @@
                     <i class="fa fa-envelope"></i>
                         <input style="border: none;" type="text" class="Email" name="Email" id="Email" placeholder="Email" />
                     </div>
-
-                    <!-- Considering this is a registration area, will we also add an Email section?
-                    What text boxes should we add for the registration area.
-                -->
 
                 </form>
 

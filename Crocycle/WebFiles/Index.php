@@ -1,9 +1,9 @@
 <?php
-// We need to use sessions, so you should always start sessions using the below code.
+// start session
 session_start();
-// If the user is not logged in redirect to the login page...
+// check if user is not logged in
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
+	header('Location: LoginPage.php'); // redirect to login page
 	exit;
 }
 ?>
@@ -54,7 +54,14 @@ if (!isset($_SESSION['loggedin'])) {
 
       </div>
 
-    </div>
+    </div> <!-- Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here -->
+    <?php if (isset($_SESSION['loggedin'])) { // I was trying to make a dynamic element, basically it will appear and greet the user if the account is found
+      $dom = new DOMDoc ('div');
+      $element = $dom->createElement('test', 'this is a root element');
+      
+      $dom->appendchild($element);
+	   exit;}
+    ?>
 
     <div class="welcome"> <!-- div class for the "Welcome to Crocycle" text on the banner-->
       <div>

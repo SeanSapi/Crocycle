@@ -49,7 +49,7 @@
 
                 <br><br>
 
-                <input class="btn" type="button" name="log" id="log" value="L O G I N">
+                <input class="btn" type="submit" name="log" id="log" value="L O G I N">
 
                 <br><br>
                 <p>Don't have an account? <a href="Register.php">Click here to Register</a></p>
