@@ -149,6 +149,7 @@ body{
 
 /*Button*/
 .btn{
+    margin-top: 15px;
     font-family: MontR;
     font-size:19px;
     font-weight:bold;

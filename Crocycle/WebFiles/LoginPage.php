@@ -1,3 +1,8 @@
+<?php 
+session_start();
+session_destroy(); // stops any previous session that may run, as the logout page just links to this page
+?>
+
 <!-- This is the html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -33,25 +38,26 @@
 
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
-                        <input style="border: none;" class="input-field" type="text" name="Username" id="Username"
-                            placeholder="Username" />
+                        <input style="border: none;" class="input-field" type="text" name="username" id="username"
+                            placeholder="Username" required/>
                     </div>
 
                     <br><br>
 
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
-                        <input style="border: none;" class="input-field" type="password" name="Passw" id="Passw"
-                            placeholder="Password" />
+                        <input style="border: none;" class="input-field" type="password" name="password" id="passwword"
+                            placeholder="Password" required/>
                     </div>
+
+                    
+                    <input class="btn" type="submit" name="log" id="log" value="L O G I N">
 
                 </form>
 
                 <br><br>
 
-                <input class="btn" type="submit" name="log" id="log" value="L O G I N">
 
-                <br><br>
                 <p>Don't have an account? <a href="Register.php">Click here to Register</a></p>
 
                 

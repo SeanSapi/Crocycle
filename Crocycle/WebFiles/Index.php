@@ -46,26 +46,32 @@ if (!isset($_SESSION['loggedin'])) {
           <h3>ABOUT US</h3>
         </a>
 
-        <a href="../WebFiles/LoginPage.php">
-          <h3>LOG IN/SIGN UP</h3>
-        </a>
+        <?php
+            // check if user is not logged in
+            if (!isset($_SESSION['loggedin'])) {
+	          echo "
+            <a href='../WebFiles/LoginPage.php'>
+              <h3>LOG IN/SIGN UP</h3>
+            </a>";
+            }else{
+              echo "
+              <a href='../WebFiles/acctsDetails.php'>
+                <h3>YOUR ACCOUNT</h3>
+              </a>";
+
+            }
+        ?>
+
 
         <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
 
       </div>
 
-    </div> <!-- Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here  Here -->
-    <?php if (isset($_SESSION['loggedin'])) { // I was trying to make a dynamic element, basically it will appear and greet the user if the account is found
-      $dom = new DOMDoc ('div');
-      $element = $dom->createElement('test', 'this is a root element');
-      
-      $dom->appendchild($element);
-	   exit;}
-    ?>
+    </div> w
 
     <div class="welcome"> <!-- div class for the "Welcome to Crocycle" text on the banner-->
       <div>
-        <h3>WELCOME TO</h3>
+        <h3>WELCOME, <?=$_SESSION['name']?>, TO</h3>
       </div>
       <div>
         <h1>CROCYCLE</h1>

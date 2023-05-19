@@ -1,221 +1,272 @@
 @font-face {
-    font-family: "MontR";
-    src: url("../Fonts/MontserratReg.ttf") format('truetype');
-  
-  }
-  
-  @font-face {
-    font-family: "HighC";
-    src: url("../Fonts/HighCruiser.ttf") format('truetype');
-  }
-  
-  @font-face {
-      font-family: "Fred";
-      src: url("../Fonts/Fredoka.ttf") format('truetype');
-  }
-  /* Font families imported */
-  .inputsection h1{
-      font-family: HighC;
-      font-size: 70px;
-   
-      text-align: center;
-  } 
-  /* this manages the Crocycle */
-  /*Background*/
-  body{
-   margin: 0;
-   
-  }
-  .bgclass{
-   height: 100vh;
-   overflow: hidden;
-   position: relative;
-   width: 100vw;
-   background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/StockImages/LogPageBG.png');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: 100% 100%;
-   display: flex;
-   align-items:center;
-   justify-content: center;
-  }
-  /*Crocycle Logo*/
-  .logo{
-     position: relative;
-     left: 500px;
-     top: -200px;
-  }
-  .user{ /*element settings for the Username input area*/
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-  }
+  font-family: "MontR";
+  src: url("../Fonts/MontserratReg.ttf") format('truetype');
 
-  .userSpc { /*element settings for the Username input wrapper*/
-    display: flex;
-    align-content: center;
-    font-size: 28px;
-    flex-grow: 2;
-    margin-left: 15px;
-  }
+}
 
-  .pfp { /*element settings for the profile pic image*/
-    width: 100%;
-    height: 100%;
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
+@font-face {
+  font-family: "HighC";
+  src: url("../Fonts/HighCruiser.ttf") format('truetype');
+}
 
-  .userstuff { /* transition for userstuff class, this class contains the user pfp and the change txt */
-    transition: 0.5s;
-    
-  }
-  .user img{ /* sets z-index to 1 for putting the pfptxt class over the img */
-    z-index: 1;
-  }
+@font-face {
+  font-family: "Fred";
+  src: url("../Fonts/Fredoka.ttf") format('truetype');
+}
 
-  .userstuff:hover > img { /* adds a darkening filter over the profile picture when hovered over*/
-    filter: brightness(50%);
-  }
-  
-  .userstuff:hover > .pfptxt{ /* reveals the hidden text when profile picture is hovered over */
-    color: rgba(255, 255, 255, 1);
-    opacity:1;
-    visibility:visible;
-  }
-  .pfptxt{ /* Elements items */
-    user-select: none; 
-    /* unselectable by the cursor*/
-    position: absolute; 
-    transform: translatey(-65px) translatex(20px);
-    color: rgba(255, 255, 255, 0);
-    visibility:hidden;
-    font-family:MontR;
-    /* makes the position independent of the parent object's settings*/
-    z-index: 2;
-    opacity:0;
-    
-    /* add transition and opacity settings for a fade-in transition effect on pfptxt */
-    transition:opacity 0.5s linear;
-    /*Aligns the slider text to the bottom of the frame*/
-  }
+/* Font families imported */
+.inputsection h1 {
+  font-family: HighC;
+  font-size: 70px;
 
-  span{ /*Element settings for the profile picture */
-    
-    width: 100%;
-    height: 100%;
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
+  text-align: center;
+}
 
-  .passTex { /* Element settings for the password area */
-    display: flex;
-    width: 100%;
-  }
+/* this manages the Crocycle */
+/*Background*/
+body {
+  margin: 0;
 
-  .passTex div { /* Element settings for the password area */
-    margin-top: 25px;
-    font-family: "MontR";
-    font-size: 28px;
-    align-self: center;
-    font-weight: bold;
-    width: 150px;
-  }
-  /* this section class manages the div where the content is in */
-  .section{
-      margin-right:200px;
-      margin-top: 2%;
-      /* manages the position of the section div */
-      background-color: #A96262;
-      /* changes background color */
-      flex-direction:space-between;
-      display: flex;
-      align-items:center;
-      justify-content: center;
-      /* centers the objects within */
-      height: 700px;
-      width: 55%;
-      /* manages the height and width */
-      border-radius: 15px;
-      overflow:hidden;
-      /* rounds the corners and hides overflowing hidden */
-      box-shadow: 0 8px 8px 3px rgb(41, 40, 40, 0.4);
-      
-      
-  }
-  
-  .dob { /* Element settings for Date of birth wrapping */
-    display: flex;
-    font-family: MontR;
-  }
+}
 
-  .dob input { /*Elem*/
-    margin-left: 15px;
-    border: none;
-    outline: none; /* removes the outline from the actual input box */
-    width: 90%;
-  }
-  
-  /* This is where the login section is*/
-  .inputsection {
-      /*width: 382px;*/
-      width: 30%;
-      padding: 75px;
-      border-radius: 15px ;
-      flex-grow: 2;
-      
-  }
-  
-  /*Forget Password Section*/
-  .inputsection p{
-    text-align: center;
-    font-family: MontR;
-  }
-  
-  /*Hyperlink*/
-  .section a {
-    text-decoration:none;
-    font-weight:bold;
-    color: black;
-  }
-  
-  /*Username and Password form*/
-  .inputs{
-    margin-left: 15px;
-    flex-grow: 2;
-      border: 1px solid #DDD; 
-      background-color:white;
-      padding: 12px;
-      border-radius: 5px;
-  }
+.bgclass {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 100, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/StockImages/LogPageBG.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .word { /* Element settings for the Password */
-    display: flex;
-  }
-  
-  /* manages the actual input elements */
-  .inputs input{
-      font-family: MontR;
-      outline: none; /* removes the outline from the actual input box */
-      width: 90%;
-  }
-  
-  /*Button*/
-  .btn{
-      font-family: MontR;
-      font-size:19px;
-      font-weight:bold;
-      background-color: #7A3E65;
-      width: 100%;
-      height: 100%;
-      padding: 8px;
-      border: none;
-      border-radius: 7px;
-      color:white;
-  }
+/*Crocycle Logo*/
+.logo {
+  position: relative;
+  left: 500px;
+  top: -200px;
+}
+
+.user {
+  /*element settings for the Username input area*/
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.userSpc {
+  /*element settings for the Username input wrapper*/
+  display: flex;
+  align-content: center;
+  width: 95%;
+  font-size: 28px;
+  flex-grow: 2;
+  margin-left: 15px;
+}
+
+.pfp {
+  /*element settings for the profile pic image*/
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.userstuff {
+  /* transition for userstuff class, this class contains the user pfp and the change txt */
+  transition: 0.5s;
+
+}
+
+.user img {
+  /* sets z-index to 1 for putting the pfptxt class over the img */
+  z-index: 1;
+}
+
+.userstuff:hover>img {
+  /* adds a darkening filter over the profile picture when hovered over*/
+  filter: brightness(50%);
+}
+
+.userstuff:hover>.pfptxt {
+  /* reveals the hidden text when profile picture is hovered over */
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.pfptxt {
+  /* Elements items */
+  user-select: none;
+  /* unselectable by the cursor*/
+  position: absolute;
+  transform: translatey(-65px) translatex(20px);
+  color: rgba(255, 255, 255, 0);
+  visibility: hidden;
+  font-family: MontR;
+  /* makes the position independent of the parent object's settings*/
+  z-index: 2;
+  opacity: 0;
+
+  /* add transition and opacity settings for a fade-in transition effect on pfptxt */
+  transition: opacity 0.5s linear;
+  /*Aligns the slider text to the bottom of the frame*/
+}
+
+span {
+  /*Element settings for the profile picture */
+
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.passTex {
+  /* Element settings for the password area */
+  display: flex;
+  width: 100%;
+}
+
+.passTex div {
+  /* Element settings for the password area */
+  margin-top: 25px;
+  font-family: "MontR";
+  font-size: 28px;
+  align-self: center;
+  font-weight: bold;
+  width: 150px;
+}
+
+/* this section class manages the div where the content is in */
+.section {
+  margin-right: 200px;
+  margin-top: 2%;
+  /* manages the position of the section div */
+  background-color: #A96262;
+  /* changes background color */
+  flex-direction: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* centers the objects within */
+  height: 700px;
+  width: 55%;
+  /* manages the height and width */
+  border-radius: 15px;
+  overflow: hidden;
+  /* rounds the corners and hides overflowing hidden */
+  box-shadow: 0 8px 8px 3px rgb(41, 40, 40, 0.4);
+
+
+}
+
+.dob {
+  /* Element settings for Date of birth wrapping */
+  display: flex;
+  font-family: MontR;
+}
+
+.dob input {
+  /*Elem*/
+  margin-left: 15px;
+  border: none;
+  outline: none;
+  /* removes the outline from the actual input box */
+  width: 90%;
+}
+
+/* This is where the login section is*/
+.inputsection {
+  /*width: 382px;*/
+  width: 30%;
+  padding: 75px;
+  border-radius: 15px;
+  flex-grow: 2;
+
+}
+
+/*Forget Password Section*/
+.inputsection p {
+  text-align: center;
+  font-family: MontR;
+}
+
+/*Hyperlink*/
+.section a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/*Username and Password form*/
+.inputs {
+  margin-left: 15px;
+  flex-grow: 2;
+  border: 1px solid #DDD;
+  background-color: white;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.word {
+  /* Element settings for the Password */
+  display: flex;
+}
+
+/* manages the actual input elements */
+.inputs input {
+  font-family: MontR;
+  outline: none;
+  /* removes the outline from the actual input box */
+  width: 90%;
+}
+.username-section{
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.username-section div {
+  font-weight: bold;
+  font-family: MontR;
+  font-size: 19px;
+}
+
+/*Button*/
+.btn {
+  font-family: MontR;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: #7A3E65;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+}
+
+.atat {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.signStat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
