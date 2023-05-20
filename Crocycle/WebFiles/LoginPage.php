@@ -46,7 +46,7 @@ session_destroy(); // stops any previous session that may run, as the logout pag
 
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
-                        <input style="border: none;" class="input-field" type="password" name="password" id="passwword"
+                        <input style="border: none;" class="input-field" type="password" name="password" id="password"
                             placeholder="Password" required/>
                     </div>
 
@@ -54,6 +54,10 @@ session_destroy(); // stops any previous session that may run, as the logout pag
                     <input class="btn" type="submit" name="log" id="log" value="L O G I N">
 
                 </form>
+
+                <p> <!-- hidden element for "invalid data" -->
+                    
+                </p>
 
                 <br><br>
 

@@ -4,8 +4,8 @@
 
 <head>
     <title>Crocyle</title>
-    <link rel="stylesheet" href="/Crocycle/Web files/ProductPages/productemp.css">
-    <link rel="stylesheet" href="/Crocycle/Web files/headerfooter.css">
+    <link rel="stylesheet" href="../WebFiles/ProductPages/productemp.css">
+    <link rel="stylesheet" href="../WebFiles/headerfooter.css">
 
 </head>
 <!-- import stylesheet mainstyles in head-->
@@ -19,30 +19,29 @@
 
             <!-- a hrefs lead to #, replace with the actual links-->
 
-            <img class="croLogo" src="/Crocycle/Images/Logo/Crocyle Logo.png" height="75px" width="75px"
+            <img class="croLogo" src="../Images/Logo/crocylelogo.png" height="75px" width="75px"
                 class="croLogo"> </img>
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="/Crocycle/Web files/Main.html">
+                <a href="../WebFiles/Index.php">
                     <h3>HOME</h3>
                 </a>
 
-                <a href="/Crocycle/Web files/Shop.html">
+                <a href="../WebFiles/Shop.php">
                     <h3>SHOP</h3>
                 </a>
 
-                <a href="/Crocycle/Web files/About.html">
+                <a href="../WebFiles/About.html">
                     <h3>ABOUT US</h3>
                 </a>
 
-                <a href="/Crocycle/Web files/LoginPage.html">
+                <a href="../WebFiles/LoginPage.html">
                     <h3>LOG IN/SIGN UP</h3>
                 </a>
 
-                <a href="#"><img src="/Crocycle/Images/Icons/Basket.png" /> </a>
 
-                <a href="#"><img src="/Crocycle/Images/Icons/Search.png" /> </a>
+                <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
 
             </div>
 
@@ -56,14 +55,14 @@
         <!-- This Div contains all the elements related to the product info display-->
         <div class="productWrap">
             <div class="productImg">
-                <img src="/Crocycle/Images/ProductImgs/Tops/WomanTop.png">
+                <img src="../Images/ProductImgs/Accessories/FlowerEar.png">
             </div>
 
 
             <div class="productDesc">
 
-                <h1>Woman Top</h1>
-                <h2> 24.00 AED </h2>
+                <h1>Flower earrings</h1>
+                <h2> 12.00 AED </h2>
 
                 <div class="sizeSelect">
 
@@ -102,7 +101,7 @@
 
                         <button class="cartButton">
                            Add to Basket &nbsp; &nbsp; 
-                            <img src="/Crocycle/Images/Icons/Basket.png" />
+                            <img src="../Images/Icons/Basket.png" />
                         </button>
 
                     </div>
@@ -141,13 +140,13 @@
         <div>
             <h1>FOLLOW</h1>
             <hr>
-            <a><img src="/Crocycle/Images/Socials/Facebook.png"></a>
-            <a><img src="/Crocycle/Images/Socials/Instagram.png"></a>
-            <a><img src="/Crocycle/Images/Socials/TikTok.png"></a>
+            <a><img src="../Images/Socials/Facebook.png"></a>
+            <a><img src="../Images/Socials/Instagram.png"></a>
+            <a><img src="../Images/Socials/TikTok.png"></a>
         </div>
 
         <div class="Foot Logo">
-            <img src="/Crocycle/Images/Logo/Crocyle Logo.png" height="50%" width="50%"></img>
+            <img src="../Images/Logo/Crocyle Logo.png" height="50%" width="50%"></img>
             <p>@Crocycle 2023</p>
 
         </div>

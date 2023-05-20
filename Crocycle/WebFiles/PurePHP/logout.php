@@ -2,5 +2,5 @@
 session_start();
 session_destroy();
 // Redirect to the login page:
-header('Location: ../WebFiles/LoginPage.php');
+header('Location: ../LoginPage.php');
 ?>

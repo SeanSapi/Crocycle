@@ -1,5 +1,4 @@
 <?php
-// start session
 session_start();
 // check if user is not logged in
 if (!isset($_SESSION['loggedin'])) {
@@ -38,7 +37,7 @@ if (!isset($_SESSION['loggedin'])) {
           <h3>HOME</h3>
         </a>
 
-        <a href="../WebFiles/Shop.html">
+        <a href="../WebFiles/Shop.php">
           <h3>SHOP</h3>
         </a>
 
@@ -94,7 +93,7 @@ if (!isset($_SESSION['loggedin'])) {
 
           <div class="slider-box"> <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Dolls.png"> </img>
+              <img src="../Images/ProductImgs/Beanie.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>

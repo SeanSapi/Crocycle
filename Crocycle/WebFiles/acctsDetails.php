@@ -1,14 +1,11 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
-session_start();
+
+include 'connection.php';
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
-}
-$conn = mysqli_connect("localhost", "root", "", "crocycledb");
-if (mysqli_connect_errno()) {
-	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 // We don't have the password or email info stored in sessions, so instead, we can get the results from the database.
 //$stmt = $conn->prepare('SELECT password, email FROM accounts WHERE id = ?');
@@ -133,7 +130,7 @@ if (mysqli_connect_errno()) {
                             </a>
                             
 
-                            <a href="../WebFiles/LoginPage.php">
+                            <a href="../WebFiles/PurePHP/logout.php">
                                 <input class="btn" type="submit" name="signout" id="signout" value="LOG OUT">
                     
 

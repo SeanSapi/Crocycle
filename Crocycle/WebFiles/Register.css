@@ -151,6 +151,7 @@ body{
 
 /*Button*/
 .btn{
+    margin-top: 5px;
     font-family: MontR;
     font-size:19px;
     font-weight:bold;
@@ -161,4 +162,9 @@ body{
     border: none;
     border-radius: 7px;
     color:white;
+}
+.btn:hover{
+  background-color: #A84448;
+  transition: background-color 0.4s;
+
 }

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html> 
     <!-- Crocycle -->
@@ -28,8 +32,23 @@
            <a href="#"><h3>SHOP</h3></a>
 
            <a href="../WebFiles/About.html"><h3>ABOUT US</h3></a>
+           
+           
+        <?php
+            // check if user is not logged in
+            if (!isset($_SESSION['loggedin'])) {
+	          echo "
+            <a href='../WebFiles/LoginPage.php'>
+              <h3>LOG IN/SIGN UP</h3>
+            </a>";
+            }else{
+              echo "
+              <a href='../WebFiles/acctsDetails.php'>
+                <h3>YOUR ACCOUNT</h3>
+              </a>";
 
-           <a href="../WebFiles/LoginPage.php"><h3>LOG IN/SIGN UP</h3></a>
+            }
+        ?>
            
            <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
 

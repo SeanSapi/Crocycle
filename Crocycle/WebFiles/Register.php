@@ -32,7 +32,7 @@
 
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
-                        <input style="border: none;" class="input-field" type="text" name="Username" id="Username"
+                        <input style="border: none;" class="input-field" type="text" name="username" id="username"
                             placeholder="Username" />
                     </div>
 
@@ -40,7 +40,7 @@
 
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
-                        <input style="border: none;" class="input-field" type="password" name="Passw" id="Passw"
+                        <input style="border: none;" class="input-field" type="password" name="password" id="password"
                             placeholder="Password" />
                     </div>
 
@@ -48,15 +48,16 @@
 
                     <div class="inputs">
                         <i class="fa fa-envelope"></i>
-                        <input style="border: none;" type="text" class="Email" name="Email" id="Email"
+                        <input style="border: none;" type="text" class="email" name="email" id="email"
                             placeholder="Email" />
                     </div>
+                    
+                   <input class="btn" type="submit" name="sign" id="sign" value="S I G N  U P">
+
 
                 </form>
 
                 <br><br>
-                <input class="btn" type="button" name="log" id="log" value="L O G I N">
-
 
                 <br><br>
 

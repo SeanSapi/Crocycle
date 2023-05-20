@@ -1,15 +1,11 @@
 <?php // this file will be used by LoginPage.php in its login form
-session_start();
 // Try to connect using this info
-$conn = mysqli_connect("localhost", "root", "", "crocycledb");
 
-if ( mysqli_connect_errno() ) {
-	// If there is an error with the connection, stop the script and display the error.
-	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+include 'connection.php';
 
 if (!isset($_POST['username'], $_POST['password']) ) { // checks if username and password are not set
 	// displays appropriate message to user
+
 	exit('Please fill both the username and password fields!');
 }
 
@@ -35,10 +31,14 @@ if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username
             $_SESSION['loggedin'] = TRUE; // set a session cookie for loggedin to true
             $_SESSION['name'] = $_POST['username']; // set a session cookie for the name to the POST's username value
             $_SESSION['id'] = $id; // set session id to the $id variable
-            header('Location: ../WebFiles/index.php'); // send the user on their merry way to index.php (this is the home screen)
+            header('Location: index.php'); // send the user on their merry way to index.php (this is the home screen)
         } else {
             // code that runs if the password is WRONG
-            echo 'Incorrect password.'; // input message to user
+            
+            
+               // put the "error element must trigger" here  
+               // - Create element > input exit text in element
+            echo 'invalid password'; // input message to user
         }
     } else {
         // code that runs if the username is WRONG
