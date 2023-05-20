@@ -28,32 +28,35 @@
 
                 <h1>Register</h1>
 
-                <form class="inline" action="../WebFiles/PurePHP/auth.php" method="post" autocomplete="off">
+                <form class="inline" action="../WebFiles/PurePHP/registeruser.php" method="post" autocomplete="off">
 
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
-                        <input style="border: none;" class="input-field" type="text" name="Username" id="Username" placeholder="Username" />
+                        <input style="border: none;" class="input-field" type="text" name="Username" id="Username"
+                            placeholder="Username" />
                     </div>
 
                     <br><br>
 
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
-                        <input style="border: none;" class="input-field" type="password" name="Passw" id="Passw" placeholder="Password" />
+                        <input style="border: none;" class="input-field" type="password" name="Passw" id="Passw"
+                            placeholder="Password" />
                     </div>
 
                     <br>
 
                     <div class="inputs">
-                    <i class="fa fa-envelope"></i>
-                        <input style="border: none;" type="text" class="Email" name="Email" id="Email" placeholder="Email" />
+                        <i class="fa fa-envelope"></i>
+                        <input style="border: none;" type="text" class="Email" name="Email" id="Email"
+                            placeholder="Email" />
                     </div>
 
                 </form>
 
                 <br><br>
-
                 <input class="btn" type="button" name="log" id="log" value="L O G I N">
+
 
                 <br><br>
 
@@ -62,7 +65,7 @@
         </div>
 
         <br><br>
-                <br><br>
+        <br><br>
     </div>
 </body>
 
