@@ -6,11 +6,13 @@ include '../connection.php';
 
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 	// Could not get the data that should have been sent.
-	exit('Please complete the registration form!');
+    $_SESSION["statMessage"] = "Please complete the registration form!";
+	header ("Location: ../Register.php");
 }
 
 if(empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])){ // checks if any one of the three inpuit fields is empty
-    exit('Please complete the registration form');
+    $_SESSION["statMessage"] = "One of the forms is empty, please complete all of them!";
+	header ("Location: ../Register.php");
 }
 
 
@@ -25,7 +27,8 @@ if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username
 
 
     if ($stmt->num_rows > 0) { // checks if stmt's rows are greater than 0, means its found a result that matches the passed in parameter
-        echo 'This username already exists, please choose another.';
+        $_SESSION["statMessage"] = "This user already exists!";
+	    header ("Location: ../Register.php");
     } else {
         // code that runs if there is no existing username already
         if($stmt = $conn->prepare('INSERT INTO crocaccounts (username, password, email) VALUES (?, ?, ?)')){
@@ -41,46 +44,12 @@ if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username
 
             echo 'User Registered. Logging In...';
         }else{
-            // Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
+            //  somehow the SQL got an error, check if the table has the three account fields used in the statement.
 	        echo 'Could not prepare statement!';
         }
     }
 
 
 	$stmt->close(); // close database connection
-}
-
-
-
-
-
-
-
-
-if (isset($_POST["submit"])) {
-
-
-    $user = $_POST["user"];
-    $pass = password_hash($_POST["pass"], PASSWORD_DEFAULT);
-    $email = $_POST["email"];
-    
-
-
-    $query = "INSERT INTO users VALUES('$user', '$pass', '$email')";
-    mysqli_query($conn, $query);
-}
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-?>
-
-<?php
-
-// save session cookies  if there aren't any (NULL)
-if (!empty($_POST['user']) && !empty($_POST['pass'])) {
-    $_SESSION["user"] = $_POST["user"];
-    $_SESSION["pass"] = $_POST["pass"];
-    echo "Session variables are set.";
 }
 ?>

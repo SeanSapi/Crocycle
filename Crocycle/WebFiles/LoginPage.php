@@ -1,6 +1,10 @@
 <?php 
 session_start();
-session_destroy(); // stops any previous session that may run, as the logout page just links to this page
+if (isset($_SESSION['loggedin'])) {
+	header('Location: Index.php'); // redirect to index page
+	exit;
+}
+
 ?>
 
 <!-- This is the html -->
@@ -12,7 +16,7 @@ session_destroy(); // stops any previous session that may run, as the logout pag
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
-    <link rel="stylesheet" href="loginpage.css">
+    <link rel="stylesheet" href="../WebFiles/loginpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -55,17 +59,23 @@ session_destroy(); // stops any previous session that may run, as the logout pag
 
                 </form>
 
-                <p> <!-- hidden element for "invalid data" -->
-                    
+                <p id="invData"> <!-- hidden element for "invalid data" -->
+                    <?php
+                    if (isset($_SESSION["statmessage"])) {
+                        echo ' ';
+                    } 
+                    else {
+                        echo $_SESSION["statMessage"];
+                        $_SESSION["statMessage"]=null;
+                    }
+                    ?>
                 </p>
 
-                <br><br>
-
+                <br>
 
                 <p>Don't have an account? <a href="Register.php">Click here to Register</a></p>
-
                 
-                <p>Forgot Password? <a href="ForgetPass.html">Click here to Reset</a></p>
+                <p>Forgot Password? <a href="ForgetPass.php">Click here to Reset</a></p>
 
             </div>
         </div>

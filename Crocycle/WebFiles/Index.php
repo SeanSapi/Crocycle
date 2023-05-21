@@ -93,7 +93,7 @@ if (!isset($_SESSION['loggedin'])) {
 
           <div class="slider-box"> <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Beanie.png"> </img>
+              <img src="../Images/ProductImgs/Headpiece/Beanie.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>

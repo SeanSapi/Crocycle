@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if (isset($_SESSION['loggedin'])) {
+	header('Location: Index.php'); // redirect to login page
+	exit;
+}
+
+?>
 <!-- This is the html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -44,13 +52,23 @@
                             placeholder="Password" />
                     </div>
 
-                    <br>
-
                     <div class="inputs">
                         <i class="fa fa-envelope"></i>
                         <input style="border: none;" type="text" class="email" name="email" id="email"
                             placeholder="Email" />
                     </div>
+
+                        <p>
+                            <?php
+                            if (isset($_SESSION["statmessage"]) || !isset($_SESSION["loggedin"])) {
+                                echo ' ';   
+                            }
+                            else {
+                                echo $_SESSION["statMessage"];
+                                $_SESSION["statMessage"]=null;
+                            }
+                        ?>
+                        </p>
                     
                    <input class="btn" type="submit" name="sign" id="sign" value="S I G N  U P">
 

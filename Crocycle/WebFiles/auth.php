@@ -6,17 +6,18 @@ include 'connection.php';
 if (!isset($_POST['username'], $_POST['password']) ) { // checks if username and password are not set
 	// displays appropriate message to user
 
-	exit('Please fill both the username and password fields!');
+    $_SESSION["statMessage"] = "Please fill the username and password!";
+    header ("Location: LoginPage.php");
 }
 
 if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username = ?')) { // $stmt variable connects to database with a prepared statement
     // prepared statement selects the id and password from crocaccounts associated with a provided username parameter
-	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+	// bound parameter types are represented by the first letter of ther name (s = string, i = int, b = blob, etc). the username data type is a string so it uses "s"
     // the username form will now be expecting a string value to be entered, minimizing the risk 
 	$stmt->bind_param('s', $_POST['username']); // bind the username acquired from the POST to the prepared statement
 	$stmt->execute(); // execute the prepared statement
 	// Store the results of $stmt (which are the provided details run through the prepared statement) so we can check if the account exists in the database.
-	$stmt->store_result();
+	$stmt->store_result(); 
 
 
     if ($stmt->num_rows > 0) { // checks if stmt's rows are greater than 0
@@ -38,11 +39,13 @@ if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username
             
                // put the "error element must trigger" here  
                // - Create element > input exit text in element
-            echo 'invalid password'; // input message to user
+            $_SESSION["statMessage"] = "Invalid Password!";
+            header ("Location: LoginPage.php");
         }
     } else {
         // code that runs if the username is WRONG
-        echo 'Incorrect username.';
+            $_SESSION["statMessage"] = "Invalid Username!";
+            header ("Location: LoginPage.php");
     }
 
 
