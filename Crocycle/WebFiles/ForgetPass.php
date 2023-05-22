@@ -37,23 +37,17 @@ session_start();
                             placeholder="Enter Username" required />
                     </div>
 
-                    <br>
-
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
                         <input style="border: none;" class="input-field" type="text" name="email" id="email"
                             placeholder="Enter Email" required />
-                    </div>
-
-                    <br><br>
+                    </div><br>
 
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
                         <input style="border: none;" class="input-field" type="password" name="updatepw" id="updatepw"
                             placeholder="Enter New Password" required />
                     </div>
-
-                    <br>
 
 
                     <div class="inputs">
@@ -73,9 +67,12 @@ session_start();
                         }
                         ?>
                     </p>
-                    <br>
 
                     <input class="btn" type="submit" name="confirm" id="confirm" value="C O N F I R M">
+
+                    <a href="../WebFiles/LoginPage.php">
+                        <p>Return to Login</p>
+                    </a>
 
                 </form>
 

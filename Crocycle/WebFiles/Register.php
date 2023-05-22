@@ -44,8 +44,6 @@ if (isset($_SESSION['loggedin'])) {
                             placeholder="Username" />
                     </div>
 
-                    <br><br>
-
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
                         <input style="border: none;" class="input-field" type="password" name="password" id="password"
@@ -71,6 +69,8 @@ if (isset($_SESSION['loggedin'])) {
                     </p>
 
                     <input class="btn" type="submit" name="sign" id="sign" value="S I G N  U P">
+
+                    <a href="../WebFiles/LoginPage.php"><p>Return to Login</p></a>
 
 
                 </form>

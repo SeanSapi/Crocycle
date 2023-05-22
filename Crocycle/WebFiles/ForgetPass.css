@@ -52,8 +52,8 @@ body{
 }
 
 .logo img {
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 85%;
 }
 
 /*Media Query Section*/
@@ -72,6 +72,13 @@ body{
 @media only screen and (min-width: 1080px){
   .logo{
     transform: translate(130px, 100px);
+  }
+  .section {
+    padding-top: 30px;
+  }
+
+  .inputs {
+    margin-bottom: 4px;
   }
 }
 

@@ -50,7 +50,7 @@ body{
 }
 
 .logo img {
-  transform: translate(45px, 35px);
+  transform: translate(110px, 80px);
   width: 100%;
 }
 
@@ -69,8 +69,13 @@ body{
 /*Media Query (Laptop)*/
 @media only screen and (min-width: 1080px){
   .logo{
-    transform: translate(130px, 100px);
+    transform: translate(35px, 45px);
   }
+ 
+  .inputsection h1{
+    font-size: 55px;
+  }
+  
 }
 
 

@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!-- This is the html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -37,9 +41,21 @@
                     <h3>ABOUT US</h3>
                 </a>
 
-                <a href="../WebFiles/LoginPage.html"> <!-- Convert to php for updates -->
+                <?php
+                // check if user is not logged in
+                if (!isset($_SESSION['loggedin'])) {
+                echo "
+                    <a href='../WebFiles/LoginPage.php'>
                     <h3>LOG IN/SIGN UP</h3>
-                </a>
+                    </a>";
+                } else {
+                echo "
+                    <a href='../WebFiles/acctsDetails.php'>
+                        <h3>YOUR ACCOUNT</h3>
+                    </a>";
+
+                }
+                ?>
 
                 <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
 

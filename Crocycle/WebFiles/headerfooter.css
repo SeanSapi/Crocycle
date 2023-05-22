@@ -7,6 +7,12 @@
     src: url('../Fonts/Montserrat.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "MontR";
+    src: url('../Fonts/MontserratReg.ttf') format('truetype');
+}
+
+
 
 /* import Montserrat font */
 
@@ -76,6 +82,7 @@
 }
 .welcome h3{  /* manages h3 objects inside welcome class*/
     font-family:MontR; /* font family is Montserrat Regular */
+    
     font-weight:lighter; /* font weight is set to lighter, meaning thinner looking text */
     
 }
@@ -112,13 +119,23 @@ footer{
 /*changes size of the header*/
 footer h1{
     font-size: 15px;
+    font-family:Mont; /* font family is Montserrat Regular */
+    
+    font-weight:bold; /* font weight is set to lighter, meaning thinner looking text */
 }
 footer a{
+    
+    font-family:MontR; /* font family is Montserrat Regular */
+    
+    font-weight:lighter; /* font weight is set to lighter, meaning thinner looking text */
     color:white;
     text-decoration:none;
     font-size: 13px;
 }
-
+footer p{
+    
+    font-family:MontR; /* font family is Montserrat Regular */
+}
 /*removes bullets on the list*/
 footer div{
     list-style-type: none;
