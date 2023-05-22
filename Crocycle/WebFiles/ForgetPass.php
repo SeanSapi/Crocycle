@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 <!-- This is the html -->
@@ -19,7 +19,7 @@ session_start();
 
     <div class="bgclass">
 
-        
+
         <div class="logo" style="transform: translate(0, 80px);">
             <img src="../Images/Logo/crocyclelogo.png"></img>
         </div>
@@ -61,32 +61,31 @@ session_start();
                         <input style="border: none;" class="input-field" type="password" name="updatepw2" id="updatepw2"
                             placeholder="Re-Enter Password" required />
                     </div>
-                    
-                        <p>
-                            <?php
-                            if (isset($_SESSION["statmessage"])) {
-                                echo ' ';   
-                            }
-                            else {
-                                echo $_SESSION["statMessage"];
-                                $_SESSION["statMessage"]=null;
-                            }
-                            ?>
-                        </p>
 
-                    <br><br>
-                    
+                    <p>
+                        <?php
+
+                        if (!isset($_SESSION["statMessage"])) {
+                            echo ' ';
+                        } else {
+                            echo $_SESSION["statMessage"];
+                            $_SESSION["statMessage"] = null;
+                        }
+                        ?>
+                    </p>
+                    <br>
+
                     <input class="btn" type="submit" name="confirm" id="confirm" value="C O N F I R M">
 
                 </form>
 
-               
+
 
 
 
             </div>
         </div>
-        
+
         <br><br>
         <br><br>
 

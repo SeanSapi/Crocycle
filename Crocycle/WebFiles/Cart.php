@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="../WebFiles/headerfooter.css">
-    <link rel="stylesheet" href="Checkout.css">
+    <link rel="stylesheet" href="Cart.css">
 
 
 </head>
@@ -25,23 +25,23 @@
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="/Crocycle/WebFiles/">
+                <a href="../WebFiles/Index.php">
                     <h3>HOME</h3>
                 </a>
 
-                <a href="/Crocycle/WebFiles/Shop.html">
+                <a href="../WebFiles/Shop.php">
                     <h3>SHOP</h3>
                 </a>
 
-                <a href="/Crocycle/WebFiles/About.html">
+                <a href="../WebFiles/About.php">
                     <h3>ABOUT US</h3>
                 </a>
 
-                <a href="/Crocycle/WebFiles/LoginPage.html">
+                <a href="../WebFiles/LoginPage.html"> <!-- Convert to php for updates -->
                     <h3>LOG IN/SIGN UP</h3>
                 </a>
 
-                <a href="#"><img src="/Crocycle/Images/Icons/Basket.png" /> </a>
+                <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
 
             </div>
 
@@ -53,33 +53,33 @@
                 <h1>Cart</h1>
             </div>
 
-            <div class="rciptWrap">
-                <form action=""> <!-- input php action here -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Product</td>
-                                <td>Price</td>
-                                <td>Quantity</td>
-                                <td>Total</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            </tr>
-                        </tbody>
-
-                    </table>
-                </form>
-            </div>
-
         </div>
+
+        
 
     </div>
 
     <div class="rcpt"> <!-- div that contains the checkout forms and items as a whole -->
 
-        
+        <div class="rciptWrap">
+            <form action=""> <!-- input php action here -->
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Total</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </form>
+        </div>
 
     </div>
 
@@ -95,17 +95,17 @@
         <div>
             <h1>LINKS</h1>
             <hr>
-            <li><a>Home</a></li>
-            <li><a>Shop</a></li>
-            <li><a>About</a> </li>
+            <li><a href="../WebFiles/Index.php">Home</a></li>
+            <li><a href="../WebFiles/Shop.php">Shop</a></li>
+            <li><a href="../WebFiles/About.php">About</a> </li>
         </div>
 
         <div>
             <h1>FOLLOW</h1>
             <hr>
-            <a><img src="../Images/Socials/Facebook.png"></a>
-            <a><img src="../Images/Socials/Instagram.png"></a>
-            <a><img src="../Images/Socials/TikTok.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
+            <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
+            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img src="../Images/Socials/TikTok.png" ></a>
         </div>
 
         <div class="Foot Logo">

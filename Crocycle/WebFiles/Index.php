@@ -2,8 +2,8 @@
 session_start();
 // check if user is not logged in
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: LoginPage.php'); // redirect to login page
-	exit;
+  header('Location: LoginPage.php'); // redirect to login page
+  exit;
 }
 ?>
 
@@ -41,24 +41,24 @@ if (!isset($_SESSION['loggedin'])) {
           <h3>SHOP</h3>
         </a>
 
-        <a href="../WebFiles/About.html">
+        <a href="../WebFiles/About.php">
           <h3>ABOUT US</h3>
         </a>
 
         <?php
-            // check if user is not logged in
-            if (!isset($_SESSION['loggedin'])) {
-	          echo "
+        // check if user is not logged in
+        if (!isset($_SESSION['loggedin'])) {
+          echo "
             <a href='../WebFiles/LoginPage.php'>
               <h3>LOG IN/SIGN UP</h3>
             </a>";
-            }else{
-              echo "
+        } else {
+          echo "
               <a href='../WebFiles/acctsDetails.php'>
                 <h3>YOUR ACCOUNT</h3>
               </a>";
 
-            }
+        }
         ?>
 
 
@@ -68,9 +68,12 @@ if (!isset($_SESSION['loggedin'])) {
 
     </div> w
 
-    <div class="welcome"> <!-- div class for the "Welcome to Crocycle" text on the banner-->
+    <div class="welcome">
+      <!-- div class for the "Welcome to Crocycle" text on the banner-->
       <div>
-        <h3>WELCOME, <?=$_SESSION['name']?>, TO</h3>
+        <h3>WELCOME,
+          <?= $_SESSION['name'] ?>, TO
+        </h3>
       </div>
       <div>
         <h1>CROCYCLE</h1>
@@ -87,11 +90,14 @@ if (!isset($_SESSION['loggedin'])) {
 
     <!-- Swiper carousel source: https://www.youtube.com/watch?v=BKKcGb80MOs -->
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper"> <!-- Swiper Carousel Wrapper-->
+      <div class="swiper-wrapper">
+        <!-- Swiper Carousel Wrapper-->
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 1 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 1 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel Item 1 -->
+          <div class="slider-box">
+            <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/Beanie.png"> </img>
               <div class="slider-txt">
@@ -103,9 +109,11 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
 
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 2 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 2 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/Headwear.png"> </img>
               <div class="slider-txt">
@@ -117,9 +125,11 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
 
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 3 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 3 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/Croshirt.png"> </img>
               <div class="slider-txt">
@@ -130,9 +140,11 @@ if (!isset($_SESSION['loggedin'])) {
 
         </div>
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 4 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 4 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/BallEar.png"> </img>
               <div class="slider-txt">
@@ -143,9 +155,11 @@ if (!isset($_SESSION['loggedin'])) {
 
         </div>
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 5 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 5 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
               <div class="slider-txt">
@@ -156,9 +170,11 @@ if (!isset($_SESSION['loggedin'])) {
 
         </div>
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 6 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 6 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/YarnGlove.png"> </img>
               <div class="slider-txt">
@@ -169,9 +185,11 @@ if (!isset($_SESSION['loggedin'])) {
 
         </div>
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 7 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 7 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/FlowerEar.png"> </img>
               <div class="slider-txt">
@@ -183,9 +201,11 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
 
 
-        <div class="swiper-slide"> <!-- Swiper Carousel Slide 8 -->
+        <div class="swiper-slide">
+          <!-- Swiper Carousel Slide 8 -->
 
-          <div class="slider-box"> <!-- Swiper Carousel box -->
+          <div class="slider-box">
+            <!-- Swiper Carousel box -->
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
               <div class="slider-txt">
@@ -280,12 +300,15 @@ if (!isset($_SESSION['loggedin'])) {
 
     </div>
 
-    <div class="imgdiv2"> <!-- imgdiv2 class-->
-      <div class="bigLeft"> <!-- class bigLeft for the big image on the left -->
+    <div class="imgdiv2">
+      <!-- imgdiv2 class-->
+      <div class="bigLeft">
+        <!-- class bigLeft for the big image on the left -->
         <img src="../Images/ProductImgs/Accessories/YarnGlove.png"> </img>
       </div>
 
-      <div class="smallRight"> <!-- class smallRight for the two small images on the right -->
+      <div class="smallRight">
+        <!-- class smallRight for the two small images on the right -->
 
         <div>
           <img src="../Images/ProductImgs/Accessories/BallEar.png"> </img>
@@ -314,17 +337,18 @@ if (!isset($_SESSION['loggedin'])) {
     <div>
       <h1>LINKS</h1>
       <hr>
-      <li><a>Home</a></li>
-      <li><a>Shop</a></li>
-      <li><a>About</a> </li>
+      <li><a href="../WebFiles/Index.php">Home</a></li>
+      <li><a href="../WebFiles/Shop.php">Shop</a></li>
+      <li><a href="../WebFiles/About.php">About</a> </li>
     </div>
 
     <div>
       <h1>FOLLOW</h1>
       <hr>
-      <a><img src="../Images/Socials/Facebook.png"></a>
-      <a><img src="../Images/Socials/Instagram.png"></a>
-      <a><img src="../Images/Socials/TikTok.png"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
+      <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
+      <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
+          src="../Images/Socials/TikTok.png"></a>
     </div>
 
     <div class="Foot Logo">

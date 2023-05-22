@@ -1,8 +1,8 @@
-<?php 
+<?php
 session_start();
 if (isset($_SESSION['loggedin'])) {
-	header('Location: Index.php'); // redirect to index page
-	exit;
+    header('Location: Index.php'); // redirect to index page
+    exit;
 }
 
 ?>
@@ -43,7 +43,7 @@ if (isset($_SESSION['loggedin'])) {
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
                         <input style="border: none;" class="input-field" type="text" name="username" id="username"
-                            placeholder="Username" required/>
+                            placeholder="Username" required />
                     </div>
 
                     <br><br>
@@ -51,36 +51,35 @@ if (isset($_SESSION['loggedin'])) {
                     <div class="inputs">
                         <i class="fa fa-lock icon"></i>
                         <input style="border: none;" class="input-field" type="password" name="password" id="password"
-                            placeholder="Password" required/>
+                            placeholder="Password" required />
                     </div>
 
-                    
+
                     <input class="btn" type="submit" name="log" id="log" value="L O G I N">
 
                 </form>
 
-                <p id="invData"> <!-- hidden element for "invalid data" -->
+                <p id="invData">
+                    <!-- hidden element for "invalid data" -->
                     <?php
-                    if (isset($_SESSION["statmessage"])) {
+
+                    if (!isset($_SESSION["statMessage"])) {
                         echo ' ';
-                    } 
-                    else {
+                    } else {
                         echo $_SESSION["statMessage"];
-                        $_SESSION["statMessage"]=null;
+                        $_SESSION["statMessage"] = null;
                     }
                     ?>
                 </p>
 
-                <br>
-
                 <p>Don't have an account? <a href="Register.php">Click here to Register</a></p>
-                
+
                 <p>Forgot Password? <a href="ForgetPass.php">Click here to Reset</a></p>
 
             </div>
         </div>
-            <br><br>
-            <br><br>
+        <br><br>
+        <br><br>
     </div>
 </body>
 

@@ -1,8 +1,8 @@
-<?php 
+<?php
 session_start();
 if (isset($_SESSION['loggedin'])) {
-	header('Location: Index.php'); // redirect to login page
-	exit;
+    header('Location: Index.php'); // redirect to login page
+    exit;
 }
 
 ?>
@@ -58,19 +58,19 @@ if (isset($_SESSION['loggedin'])) {
                             placeholder="Email" />
                     </div>
 
-                        <p>
-                            <?php
-                            if (isset($_SESSION["statmessage"]) || !isset($_SESSION["loggedin"])) {
-                                echo ' ';   
-                            }
-                            else {
-                                echo $_SESSION["statMessage"];
-                                $_SESSION["statMessage"]=null;
-                            }
+                    <p>
+                        <?php
+
+                        if (!isset($_SESSION["statMessage"])) {
+                            echo ' ';
+                        } else {
+                            echo $_SESSION["statMessage"];
+                            $_SESSION["statMessage"] = null;
+                        }
                         ?>
-                        </p>
-                    
-                   <input class="btn" type="submit" name="sign" id="sign" value="S I G N  U P">
+                    </p>
+
+                    <input class="btn" type="submit" name="sign" id="sign" value="S I G N  U P">
 
 
                 </form>

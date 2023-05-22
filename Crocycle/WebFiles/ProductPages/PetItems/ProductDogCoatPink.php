@@ -154,9 +154,9 @@ session_start();
         <div>
             <h1>FOLLOW</h1>
             <hr>
-            <a><img src="../Images/Socials/Facebook.png"></a>
-            <a><img src="../Images/Socials/Instagram.png"></a>
-            <a><img src="../Images/Socials/TikTok.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
+            <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
+            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img src="../Images/Socials/TikTok.png" ></a>
         </div>
 
         <div class="Foot Logo">
