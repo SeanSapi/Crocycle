@@ -40,7 +40,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <form class="user" action="" method="post" autocomplete="off"> <!-- username and profile picture -->
 
                     <span class="userstuff">
-                        <img class="pfp" src="../Images/ourTeam/sean.png">
+                        <img class="pfp" src="../Images/StockImages/PlaceHldr.png">
                         <div class="pfptxt">
                             <h2> CHANGE </h2>
                         </div>
@@ -90,10 +90,6 @@ if (!isset($_SESSION['loggedin'])) {
                             </div>
 
 
-
-
-
-
                         </div>
 
                         <div class="passTex">
@@ -110,7 +106,6 @@ if (!isset($_SESSION['loggedin'])) {
 
                                 </form>
                             </div>
-
 
                         </div>
 
