@@ -50,26 +50,33 @@ body{
 }
 
 .logo img {
-  transform: translate(110px, 80px);
   width: 100%;
 }
 
 /*Media Query Section*/
 /*-------------------------------------------------------------------------------------------*/
 
-/*Media Query (Monitor)*/ 
-@media only screen and (min-width: 1200px) {
-  .logo {
-    left: 820px;
-    top: -240px;
-
+/*Media Query (Desktop Monitor)*/ 
+@media only screen and (min-width: 1025px) {
+  .logo img{
+    transform: translate(170px, 120px);
+    /*transform: translate(1000px, 145px);*/
   }
+
+  .inputsection {
+    transform: translateY(-20px);
+  }
+  
+  .inputsection h1{
+    font-size: 70px;
+  }
+  
 }
 
 /*Media Query (Laptop)*/
-@media only screen and (min-width: 1080px){
+@media only screen and (min-width: 769px) and (max-width: 1024px){
   .logo{
-    transform: translate(35px, 45px);
+    transform: translate(35px, 245px);
   }
  
   .inputsection h1{

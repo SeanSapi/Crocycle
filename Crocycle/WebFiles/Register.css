@@ -66,16 +66,17 @@ body {
 /*-------------------------------------------------------------------------------------------*/
 
 /*Media Query (Monitor)*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1025px) {
   .logo {
-    left: 820px;
-    top: -240px;
-
+    transform: translate(125px, 105px);
+  }
+  .inputs {
+    margin-bottom: 10px;
   }
 }
 
 /*Media Query (Laptop)*/
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width:769) and (max-width: 1024px) {
   .logo {
     transform: translate(125px, 105px);
   }
