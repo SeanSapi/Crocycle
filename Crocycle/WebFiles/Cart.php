@@ -1,5 +1,6 @@
 <?php
-session_start();
+
+include "connection.php";
 
 ?>
 <!-- This is the html -->
@@ -44,12 +45,12 @@ session_start();
                 <?php
                 // check if user is not logged in
                 if (!isset($_SESSION['loggedin'])) {
-                echo "
+                    echo "
                     <a href='../WebFiles/LoginPage.php'>
                     <h3>LOG IN/SIGN UP</h3>
                     </a>";
                 } else {
-                echo "
+                    echo "
                     <a href='../WebFiles/acctsDetails.php'>
                         <h3>YOUR ACCOUNT</h3>
                     </a>";
@@ -71,13 +72,42 @@ session_start();
 
         </div>
 
-        
+
 
     </div>
 
     <div class="rcpt"> <!-- div that contains the checkout forms and items as a whole -->
 
         <div class="rciptWrap">
+            <?php
+            
+
+           $Products = "SELECT name, price, quantity, img FROM cartitems WHERE id = 1";
+
+           $result = $conn -> query($Products);
+
+           if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo "id: " . $row["id"]. "- Name: ". $row["name"]. "- Price ". $row["price"];
+            }
+           }
+           else {
+            echo "0 results";
+           }
+            
+
+            if (isset($_POST['id'], $_POST['quantity']) && is_numeric($_POST['id']) && is_numeric($_POST['quantity'])) {
+
+                /*
+                for ($i = 0; $i <= 5 ; $i++) {
+                    
+                }
+                    */
+            } else {
+
+            }
+            ?>
+
             <form action=""> <!-- input php action here -->
                 <table>
                     <thead>
@@ -119,9 +149,11 @@ session_start();
         <div>
             <h1>FOLLOW</h1>
             <hr>
-            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img
+                    src="../Images/Socials/Facebook.png"></a>
             <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
-            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img src="../Images/Socials/TikTok.png" ></a>
+            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
+                    src="../Images/Socials/TikTok.png"></a>
         </div>
 
         <div class="Foot Logo">
