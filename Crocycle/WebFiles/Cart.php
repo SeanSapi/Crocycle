@@ -30,7 +30,7 @@ include "connection.php";
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="../Index.php">
+                <a href="../index.php">
                     <h3>HOME</h3>
                 </a>
 
@@ -256,7 +256,7 @@ include "connection.php";
         <div>
             <h1>LINKS</h1>
             <hr>
-            <li><a href="../Index.php">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="../WebFiles/Shop.php">Shop</a></li>
             <li><a href="../WebFiles/About.php">About</a> </li>
         </div>

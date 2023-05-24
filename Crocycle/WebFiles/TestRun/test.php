@@ -39,7 +39,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM crocaccounts WHERE username 
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
             echo 'Welcome ' . $_SESSION['name'] . '!';
-            header('Location: WebFiles/Index.php'); // send the user on their merry way to index.php (this is the home screen)
+            header('Location: WebFiles/index.php'); // send the user on their merry way to index.php (this is the home screen)
         } else {
             // Incorrect password
             echo 'Incorrect username and/or password!';

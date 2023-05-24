@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['loggedin'])) {
-    header('Location: ../Index.php'); // redirect to index page
+    header('Location: ../index.php'); // redirect to index page
     exit;
 }
 
