@@ -24,7 +24,7 @@
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="../Webfiles/Index.php">
+                <a href="../Webfiles/index.php">
                     <h3>HOME</h3>
                 </a>
 

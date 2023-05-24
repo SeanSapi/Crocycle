@@ -28,7 +28,7 @@ session_start();
 
       <div class="options">
         <!-- Hyperlinks that transfers you to other pages -->
-        <a href="../Index.php">
+        <a href="../index.php">
           <h3>HOME</h3>
         </a>
 
