@@ -8,8 +8,8 @@ session_start();
 
 <head>
     <title>Crocyle</title>
-    <link rel="stylesheet" href="../WebFiles/ProductPages/productemp.css">
-    <link rel="stylesheet" href="../WebFiles/headerfooter.css">
+    <link rel="stylesheet" href="../../../WebFiles/ProductPages/productemp.css">
+    <link rel="stylesheet" href="../../../WebFiles/headerfooter.css">
 
 </head>
 <!-- import stylesheet mainstyles in head-->
@@ -23,26 +23,26 @@ session_start();
 
             <!-- a hrefs lead to #, replace with the actual links-->
 
-            <img class="croLogo" src="../Images/Logo/CrocycleLogo.png" height="75px" width="75px"
+            <img class="croLogo" src="../../../Images/Logo/CrocycleLogo.png" height="75px" width="75px"
                 class="croLogo"> </img>
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="../WebFiles/Index.php">
+                <a href="../../../WebFiles/Index.php">
                     <h3>HOME</h3>
                 </a>
 
-                <a href="../WebFiles/Shop.php">
+                <a href="../../../WebFiles/Shop.php">
                     <h3>SHOP</h3>
                 </a>
 
-                <a href="../WebFiles/About.php">
+                <a href="../../../WebFiles/About.php">
                     <h3>ABOUT US</h3>
                 </a>
 
                 C
 
-                <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
+                <a href="#"><img src="../../../Images/Icons/Basket.png" /> </a>
 
 
             </div>
@@ -57,7 +57,7 @@ session_start();
         <!-- This Div contains all the elements related to the product info display-->
         <div class="productWrap">
             <div class="productImg">
-                <img src="../Images/ProductImgs/Tops/WomanTop.png">
+                <img src="../../../Images/ProductImgs/Tops/WomanTop.png">
             </div>
 
 
@@ -103,7 +103,7 @@ session_start();
 
                         <button class="cartButton">
                            Add to Basket &nbsp; &nbsp; 
-                            <img src="../Images/Icons/Basket.png" />
+                            <img src="../../../Images/Icons/Basket.png" />
                         </button>
 
                     </div>
@@ -142,13 +142,13 @@ session_start();
         <div>
             <h1>FOLLOW</h1>
             <hr>
-            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
-            <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
-            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img src="../Images/Socials/TikTok.png" ></a>
+            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../../../Images/Socials/Facebook.png"></a>
+            <a href="https://www.instagram.com/crocycled/"><img src="../../../Images/Socials/Instagram.png"></a>
+            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img src="../../../Images/Socials/TikTok.png" ></a>
         </div>
 
         <div class="Foot Logo">
-            <img src="../Images/Logo/CrocycleLogo.png" height="50%" width="50%"></img>
+            <img src="../../../Images/Logo/CrocycleLogo.png" height="50%" width="50%"></img>
             <p>@Crocycle 2023</p>
 
         </div>

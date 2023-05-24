@@ -109,10 +109,72 @@ include "connection.php";
 
                 $result = mysqli_query($conn, $Products);
 
+                $total = 0;
+
+                $loop = 0;
+
+                // var_dump($_SESSION["NewItems"]);
+                /*
+                While ($loop <= $_SESSION["itemNo"]) {
+                $loop++;
+                $total = ($total + ($_SESSION["NewItems"][$loop][2] * $_SESSION["NewItems"][$loop][3]));
+                //Header first div, Table items below
+                
+                //<div class='listItem'>
+                //<p> " . $row["id"] . "
+                //</div>
+                if (($loop % 2) == 0) {
+                echo "
+                <div class='listBody2'>
+                <div class='listItem'>
+                <p> " . $_SESSION["NewItems"][$loop][0] . "
+                </div>
+                
+                <div class='listItem'>
+                <img src='../Images/ProductImgs/" . $_SESSION["NewItems"][$loop][1] . "'/>
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $_SESSION["NewItems"][$loop][2] . " Pcs
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $_SESSION["NewItems"][$loop][3] . " AED
+                </div>
+                
+                </div>
+                ";
+                } else {
+                echo "
+                <div class='listBody'>
+                <div class='listItem'>
+                <p> " . $row["name"] . "
+                </div>
+                
+                <div class='listItem'>
+                <img src='../Images/ProductImgs/" . $row["img"] . "'/>
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $row["quantity"] . " Pcs
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $row["price"] . " AED
+                </div>
+                
+                </div>
+                ";
+                }
+                
+                }
+                */
                 if (mysqli_num_rows($result) > 0) {
                     $loop = 0;
                     while ($row = $result->fetch_assoc()) {
                         $loop++;
+
+                        $total = ($total + ($row["price"] * $row["quantity"]));
 
                         //Header first div, Table items below
                 
@@ -128,6 +190,10 @@ include "connection.php";
                                 
                                 <div class='listItem'>
                                     <img src='../Images/ProductImgs/" . $row["img"] . "'/>
+                                </div>
+                                
+                                <div class='listItem'>
+                                    <p> " . $row["quantity"] . " Pcs
                                 </div>
                                 
                                 <div class='listItem'>
@@ -148,6 +214,10 @@ include "connection.php";
                                 </div>
                                 
                                 <div class='listItem'>
+                                    <p> " . $row["quantity"] . " Pcs
+                                </div>
+                                
+                                <div class='listItem'>
                                     <p> " . $row["price"] . " AED
                                 </div>
                             
@@ -160,30 +230,18 @@ include "connection.php";
                 }
                 ?>
 
-
-
             </div>
+            <div class="TotlWrap">
 
-            <div>
-                <!-- input php action here -->
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Product</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        </tr>
-                    </tbody>
+                <div class="total">
+                    <!-- input php action here -->
+                    <?php echo "Total Price: <b>" . $total . "</b> AED" ?>
 
-                </table>
+                    <a class="checkout-button" href="Checkout.html"> Checkout </a>
+
+                </div>
             </div>
         </div>
-
     </div>
 
     <footer class="bottom">

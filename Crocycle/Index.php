@@ -101,7 +101,10 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Headpiece/Beanie.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+                <?php
+                 $_SESSION["IDReq"] = 1;
+                 echo "<a href='WebFiles\ProductPage.php'>VIEW</a>"
+                ?>
               </div>
             </div>
           </div>
