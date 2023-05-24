@@ -32,7 +32,7 @@ if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username
             $_SESSION['loggedin'] = TRUE; // set a session cookie for loggedin to true
             $_SESSION['name'] = $_POST['username']; // set a session cookie for the name to the POST's username value
             $_SESSION['id'] = $id; // set session id to the $id variable
-            header('Location: index.php'); // send the user on their merry way to index.php (this is the home screen)
+            header('Location: ../index.php'); // send the user on their merry way to index.php (this is the home screen)
         } else {
             // code that runs if the password is WRONG
             

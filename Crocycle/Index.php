@@ -2,7 +2,7 @@
 session_start();
 // check if user is not logged in
 if (!isset($_SESSION['loggedin'])) {
-  header('Location: LoginPage.php'); // redirect to login page
+  header('Location: WebFiles/LoginPage.php'); // redirect to login page
   exit;
 }
 ?>
@@ -13,8 +13,8 @@ if (!isset($_SESSION['loggedin'])) {
 
 <head>
   <title>Crocycle</title>
-  <link rel="stylesheet" href="headerfooter.css">
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="WebFiles/headerfooter.css">
+  <link rel="stylesheet" href="Webfiles/home.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 </head>
@@ -29,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
 
       <!-- a hrefs lead to #, replace with the actual links-->
 
-      <img src="../Images/Logo/crocyclelogo.png" height="75px" width="75px" class="croLogo"> </img>
+      <img src="Images/Logo/crocyclelogo.png" height="75px" width="75px" class="croLogo"> </img>
 
       <div class="options">
         <!-- Hyperlinks that transfers you to other pages -->
@@ -37,11 +37,11 @@ if (!isset($_SESSION['loggedin'])) {
           <h3>HOME</h3>
         </a>
 
-        <a href="../WebFiles/Shop.php">
+        <a href="WebFiles/Shop.php">
           <h3>SHOP</h3>
         </a>
 
-        <a href="../WebFiles/About.php">
+        <a href="WebFiles/About.php">
           <h3>ABOUT US</h3>
         </a>
 
@@ -49,12 +49,12 @@ if (!isset($_SESSION['loggedin'])) {
         // check if user is not logged in
         if (!isset($_SESSION['loggedin'])) {
           echo "
-            <a href='../WebFiles/LoginPage.php'>
+            <a href='WebFiles/LoginPage.php'>
               <h3>LOG IN/SIGN UP</h3>
             </a>";
         } else {
           echo "
-              <a href='../WebFiles/acctsDetails.php'>
+              <a href='WebFiles/acctsDetails.php'>
                 <h3>YOUR ACCOUNT</h3>
               </a>";
 
@@ -62,7 +62,7 @@ if (!isset($_SESSION['loggedin'])) {
         ?>
 
 
-        <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
+        <a href="WebFiles\Cart.php"><img src="Images/Icons/Basket.png" /> </a>
 
       </div>
 
@@ -99,7 +99,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/Beanie.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/Beanie.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -115,7 +115,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/Headwear.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/Headwear.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -131,7 +131,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/Croshirt.png"> </img>
+              <img src="Images/ProductImgs/Tops/Croshirt.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -146,7 +146,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/BallEar.png"> </img>
+              <img src="Images/ProductImgs/Accessories/BallEar.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -161,7 +161,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -176,7 +176,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/YarnGlove.png"> </img>
+              <img src="Images/ProductImgs/Accessories/YarnGlove.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -191,7 +191,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/FlowerEar.png"> </img>
+              <img src="Images/ProductImgs/Accessories/FlowerEar.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -207,7 +207,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
               <div class="slider-txt">
                 <a href="#">VIEW</a>
               </div>
@@ -248,7 +248,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     <div class="imgdiv">
 
-      <img src="../Images/StockImages/Handknitting.png"> </img>
+      <img src="Images/StockImages/Handknitting.png"> </img>
     </div>
 
   </div>
@@ -258,17 +258,17 @@ if (!isset($_SESSION['loggedin'])) {
 
     <div class="imgdiv2">
       <div class="bigLeft">
-        <img src="../Images/ProductImgs/Tops/RedSweater.png"> </img>
+        <img src="Images/ProductImgs/Tops/RedSweater.png"> </img>
       </div>
 
       <div class="smallRight">
 
         <div>
-          <img src="../Images/ProductImgs/Headpiece/beanie.png"> </img>
+          <img src="Images/ProductImgs/Headpiece/beanie.png"> </img>
         </div>
 
         <div>
-          <img src="../Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
+          <img src="Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
         </div>
 
       </div>
@@ -304,18 +304,18 @@ if (!isset($_SESSION['loggedin'])) {
       <!-- imgdiv2 class-->
       <div class="bigLeft">
         <!-- class bigLeft for the big image on the left -->
-        <img src="../Images/ProductImgs/Accessories/YarnGlove.png"> </img>
+        <img src="Images/ProductImgs/Accessories/YarnGlove.png"> </img>
       </div>
 
       <div class="smallRight">
         <!-- class smallRight for the two small images on the right -->
 
         <div>
-          <img src="../Images/ProductImgs/Accessories/BallEar.png"> </img>
+          <img src="Images/ProductImgs/Accessories/BallEar.png"> </img>
         </div>
 
         <div>
-          <img src="../Images/ProductImgs/Accessories/FlowerEar.png"> </img>
+          <img src="Images/ProductImgs/Accessories/FlowerEar.png"> </img>
         </div>
 
       </div>
@@ -337,22 +337,22 @@ if (!isset($_SESSION['loggedin'])) {
     <div>
       <h1>LINKS</h1>
       <hr>
-      <li><a href="../WebFiles/Index.php">Home</a></li>
-      <li><a href="../WebFiles/Shop.php">Shop</a></li>
-      <li><a href="../WebFiles/About.php">About</a> </li>
+      <li><a href="WebFiles/Index.php">Home</a></li>
+      <li><a href="WebFiles/Shop.php">Shop</a></li>
+      <li><a href="WebFiles/About.php">About</a> </li>
     </div>
 
     <div>
       <h1>FOLLOW</h1>
       <hr>
-      <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
-      <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="Images/Socials/Facebook.png"></a>
+      <a href="https://www.instagram.com/crocycled/"><img src="Images/Socials/Instagram.png"></a>
       <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
-          src="../Images/Socials/TikTok.png"></a>
+          src="Images/Socials/TikTok.png"></a>
     </div>
 
     <div class="Foot Logo">
-      <img src="../Images/Logo/crocyclelogo.png" height="50%" width="50%"></img>
+      <img src="Images/Logo/crocyclelogo.png" height="50%" width="50%"></img>
       <p>@Crocycle 2023</p>
 
     </div>

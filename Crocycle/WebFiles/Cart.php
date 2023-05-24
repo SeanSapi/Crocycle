@@ -30,7 +30,7 @@ include "connection.php";
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="../WebFiles/Index.php">
+                <a href="../Index.php">
                     <h3>HOME</h3>
                 </a>
 
@@ -64,7 +64,8 @@ include "connection.php";
 
         </div>
 
-        <div class="welcome"> <!-- div class for the "Welcome to Crocycle" text on the banner-->
+        <div class="welcome">
+            <!-- div class for the "Welcome to Crocycle" text on the banner-->
 
             <div>
                 <h1>Cart</h1>
@@ -76,39 +77,69 @@ include "connection.php";
 
     </div>
 
-    <div class="rcpt"> <!-- div that contains the checkout forms and items as a whole -->
+    <div class="rcpt">
+        <!-- div that contains the checkout forms and items as a whole -->
 
         <div class="rciptWrap">
-            <?php
-            
 
-           $Products = "SELECT name, price, quantity, img FROM cartitems WHERE id = 1";
 
-           $result = $conn -> query($Products);
+            <div class='listHead'>
+                <p>
+                    Product ID
+                </p>
+                <p>
+                    image 
+                </p>
+                <p>
+                    Name
+                </p>
+                <p>
+                    Price
+                </p>
+            </div>
 
-           if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                echo "id: " . $row["id"]. "- Name: ". $row["name"]. "- Price ". $row["price"];
-            }
-           }
-           else {
-            echo "0 results";
-           }
-            
+            <div class="bodyWrap">
 
-            if (isset($_POST['id'], $_POST['quantity']) && is_numeric($_POST['id']) && is_numeric($_POST['quantity'])) {
+                <?php
 
-                /*
-                for ($i = 0; $i <= 5 ; $i++) {
-                    
+                $Products = "SELECT id, name, price, quantity, img FROM cartitems";
+
+                $result = mysqli_query($conn, $Products);
+
+                if (mysqli_num_rows($result) > 0) {
+                    $loop = 0;
+                    while ($row = $result->fetch_assoc()) {
+                        $loop++;
+                        //Header first div, Table items below
+                        echo "
+                        <div class='listBody'>
+                            <div class='listItem'>
+                                <p> " . $row["id"] . "
+                            </div>
+                            <div class='listItem'>
+                                <img src='../Images/ProductImgs/" . $row["img"] ."'/>
+                            </div>
+                            <div class='listItem'>
+                                <p> " . $row["name"] . "
+                            </div>
+                            <div class='listItem'>
+                                <p> " . $row["price"] . "
+                            </div>
+                        
+                        </div>
+                    ";
+                    }
+                } else {
+                    echo "No Products Found";
                 }
-                    */
-            } else {
+                ?>
 
-            }
-            ?>
+                
 
-            <form action=""> <!-- input php action here -->
+            </div>
+
+            <div>
+                <!-- input php action here -->
                 <table>
                     <thead>
                         <tr>
@@ -124,7 +155,7 @@ include "connection.php";
                     </tbody>
 
                 </table>
-            </form>
+            </div>
         </div>
 
     </div>
@@ -141,7 +172,7 @@ include "connection.php";
         <div>
             <h1>LINKS</h1>
             <hr>
-            <li><a href="../WebFiles/Index.php">Home</a></li>
+            <li><a href="../Index.php">Home</a></li>
             <li><a href="../WebFiles/Shop.php">Shop</a></li>
             <li><a href="../WebFiles/About.php">About</a> </li>
         </div>

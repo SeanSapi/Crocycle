@@ -1,24 +1,27 @@
 @font-face {
-    font-family: "Mont"; /*Mont for general text*/
-    src: url("../Fonts/Montserrat.ttf") format('truetype');
-  }
-  
-  @font-face {
-    font-family: "MontR";
-    src: url("../Fonts/MontserratReg.ttf") format('truetype');
-  
-  }
-  
-  @font-face {
-    font-family: "HighC"; /*HighC for Headers*/
-    src: url("../Fonts/HighCruiser.ttf") format('truetype');
-  }
-  
-  @font-face {
-    font-family: "Fred";
-    src: url("../Fonts/Fredoka.ttf") format('truetype');
-  }
-   /*
+  font-family: "Mont";
+  /*Mont for general text*/
+  src: url("../Fonts/Montserrat.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "MontR";
+  src: url("../Fonts/MontserratReg.ttf") format('truetype');
+
+}
+
+@font-face {
+  font-family: "HighC";
+  /*HighC for Headers*/
+  src: url("../Fonts/HighCruiser.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fred";
+  src: url("../Fonts/Fredoka.ttf") format('truetype');
+}
+
+/*
   * {
    Used for debugging objects and space, remove/comment out when done 
    
@@ -26,173 +29,241 @@
      border: 1px solid red;
   }  
  */
-  body {
-    background-color: #F6E1C3;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header{    
-    height:300px;
-    background-image: url("/Crocycle/Images/StockImages/CrocyleHeaderImg.png");
-   
-  }
-  .welcome{
-    
-    top: 115px; /* sets its distance from the top to 115px */
-  }
-  h1{
-    font-family:MontR;
-  }
-  
-  
-  .rcpt { /* manages the rcpt class, which has the input forms and buttons in it */
-    margin: 10px 5px;
-    background-color: #e2cbab;
-    display: flex;
-    flex-direction: column; /* flex-direction is column style, for a vertical arrangement of elements */
-    overflow:hidden; /* hides overflowing elements */
-  }
+body {
+  background-color: #F6E1C3;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .credits{ /* manages the credits class which has the credit card company options (nonfunctional) */
-    
-    display: flex;
-    flex-direction: flex-start;
-    align-items:center;
-    width: 35%;
-    padding: 15px;
-    margin-right: 2px;
-  }
-  .credits div{ /* manages the divs inside credits, these divs hold the company logos */
-    display: flex;
-    width: 300px;
-    border-radius:5px;
-    margin-right: 5px;
-   
-    justify-content:center;
-  }
+.header {
+  height: 300px;
+  background-image: url("/Crocycle/Images/StockImages/CrocyleHeaderImg.png");
 
-  
-  .credits div img {  /* manages the imgs inside the credits divs */
-    /* 
+}
+
+.welcome {
+
+  top: 115px;
+  /* sets its distance from the top to 115px */
+}
+
+h1 {
+  font-family: MontR;
+}
+
+
+.rcpt {
+  /* manages the rcpt class, which has the input forms and buttons in it */
+  margin: 10px 15px;
+  background-color: #e2cbab;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction is column style, for a vertical arrangement of elements */
+  overflow: hidden;
+  /* hides overflowing elements */
+}
+
+.credits {
+  /* manages the credits class which has the credit card company options (nonfunctional) */
+
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+  width: 35%;
+  padding: 15px;
+  margin-right: 2px;
+}
+
+.credits div {
+  /* manages the divs inside credits, these divs hold the company logos */
+  display: flex;
+  width: 300px;
+  border-radius: 5px;
+  margin-right: 5px;
+
+  justify-content: center;
+}
+
+
+.credits div img {
+  /* manages the imgs inside the credits divs */
+  /* 
     width: 250px;
     height: 100px; */
-    
-    width: 30%;
-    height: 50%;
-    object-fit:cover;
-  }
 
-  .pap{
-    
-    background-color: #939DFF;
-  }
-  
-  .amazon{
-    
-    background-color: #C60C4F;
-  }
+  width: 30%;
+  height: 50%;
+  object-fit: cover;
+}
 
-  .google{ 
-    
-    background-color: #D9D9D9;
-  } /* these classes manage the three divs where the company logos are in, different colors for each of them */
+.pap {
 
-  input{ /* manages any input objects inside Checkout.html as a whole */
-    border:none;
-    outline: none; /* removes the outline from the actual input box */
-    font-size: 20px;
-    padding: 15px;
-    width:40%;
-    border-radius: 5px;
-  }
-  .checkout-forms{ /* manages the checkout-forms class, which has the input forms */
-    padding: 15px;
-  }
+  background-color: #939DFF;
+}
 
-  .contactinfo {    /* manages the contactinfo form class */
-    margin-left: 15px;
-  }
+.amazon {
 
-  .address { /* manages the address form class, which has the first and last name input forms */
-    display: flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  
-  
-  .address2 { /* manages the address2 form class, which has the address info input forms */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
-    
-  }
-  .address2 input{ /* manages the input objects inside address2 */
-    
-    margin-bottom: 15px;
-  }
+  background-color: #C60C4F;
+}
 
-  .gift-section { /* manages the gift-section  class */
-    display: flex;
-    align-items: center;
-  } 
+.google {
 
-  .voucher {  /* manages the checkout-forms class, which has the input forms */
-    margin-left: 15px;
-    display: flex;
-    height: 50px;
-  }
+  background-color: #D9D9D9;
+}
 
-  .voucher input {  /* manages the inputs inside voucher */
-    width: 80%;
-  }
+/* these classes manage the three divs where the company logos are in, different colors for each of them */
 
-  .cnfrm { /* manages the cnfrm class, which has the back and purchse buttons */
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  h3{
-    font-size: 23px;
+input {
+  /* manages any input objects inside Checkout.html as a whole */
+  border: none;
+  outline: none;
+  /* removes the outline from the actual input box */
+  font-size: 20px;
+  padding: 15px;
+  width: 40%;
+  border-radius: 5px;
+}
 
-  }
-  
-  .cnfrm a{
-     
-    text-decoration:none;
-    font-weight:bold;
-    font-family:Mont;
-    padding: 10px 85px;
-    border-radius: 5px;
-    
-  }
-  .cart h3 {
-    padding: 5px;
-    color:black;
-    background-color: none;
-  }
-  .buy{ /* manages the buy class */
-    
-    background-color: #7A3E65;
-  }
-  .buy h3 { /* manages h3 objects in the buy class */
-    border-radius: 5px;
-    color:white;
-    padding: 5px;
-    text-decoration: none;
-    background-color: #7A3E65;
-  }
+.checkout-forms {
+  /* manages the checkout-forms class, which has the input forms */
+  padding: 15px;
+}
 
-  .buy:hover { /* manages the buy classes when its hovered on  */
-    background-color: #8b3c70;
-  }
+.contactinfo {
+  /* manages the contactinfo form class */
+  margin-left: 15px;
+}
 
-  .buy:hover h3{ 
-    background-color: #8b3c70;
-  }
+.address {
+  /* manages the address form class, which has the first and last name input forms */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.address2 {
+  /* manages the address2 form class, which has the address info input forms */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+
+}
+
+.address2 input {
+  /* manages the input objects inside address2 */
+
+  margin-bottom: 15px;
+}
+
+.gift-section {
+  /* manages the gift-section  class */
+  display: flex;
+  align-items: center;
+}
+
+.voucher {
+  /* manages the checkout-forms class, which has the input forms */
+  margin-left: 15px;
+  display: flex;
+  height: 50px;
+}
+
+.voucher input {
+  /* manages the inputs inside voucher */
+  width: 80%;
+}
+
+.cnfrm {
+  /* manages the cnfrm class, which has the back and purchse buttons */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h3 {
+  font-size: 23px;
+
+}
+
+.cnfrm a {
+
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Mont;
+  padding: 10px 85px;
+  border-radius: 5px;
+
+}
+
+.cart h3 {
+  padding: 5px;
+  color: black;
+  background-color: none;
+}
+
+.buy {
+  /* manages the buy class */
+
+  background-color: #7A3E65;
+}
+
+.buy h3 {
+  /* manages h3 objects in the buy class */
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  background-color: #7A3E65;
+}
+
+.buy:hover {
+  /* manages the buy classes when its hovered on  */
+  background-color: #8b3c70;
+}
+
+.buy:hover h3 {
+  background-color: #8b3c70;
+}
+
+
+.rciptWrap {
+  display: flex;
+  flex-direction: column;
+  font-family: MontR;
+}
+
+.listHead {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.listHead p {
+  width: 300px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: solid 2px black;
+}
+
+.listBody {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  height: 100px;
+}
+
+.listItem {
+  width: 300px;
+}
+
+.listItem img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}

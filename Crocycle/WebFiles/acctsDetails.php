@@ -112,7 +112,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <br><br>
                         <div class="signStat">
 
-                            <a href="../WebFiles/Index.php">
+                            <a href="history.back()">
                                 <input class="btn" type="submit" name="signin" id="signin" value="BACK">
                             </a>
                             
