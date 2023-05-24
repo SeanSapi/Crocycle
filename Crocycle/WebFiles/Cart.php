@@ -84,14 +84,17 @@ include "connection.php";
 
 
             <div class='listHead'>
-                <p>
+                <!--<p>
                     Product ID
-                </p>
-                <p>
-                    image 
-                </p>
+                </p>-->
                 <p>
                     Name
+                </p>
+                <p>
+                    Image
+                </p>
+                <p>
+                    Quantity
                 </p>
                 <p>
                     Price
@@ -110,31 +113,54 @@ include "connection.php";
                     $loop = 0;
                     while ($row = $result->fetch_assoc()) {
                         $loop++;
+
                         //Header first div, Table items below
-                        echo "
-                        <div class='listBody'>
-                            <div class='listItem'>
-                                <p> " . $row["id"] . "
+                
+                        //<div class='listItem'>
+                        //<p> " . $row["id"] . "
+                        //</div>
+                        if (($loop % 2) == 0) {
+                            echo "
+                            <div class='listBody2'>
+                                <div class='listItem'>
+                                    <p> " . $row["name"] . "
+                                </div>
+                                
+                                <div class='listItem'>
+                                    <img src='../Images/ProductImgs/" . $row["img"] . "'/>
+                                </div>
+                                
+                                <div class='listItem'>
+                                    <p> " . $row["price"] . " AED
+                                </div>
+                            
                             </div>
-                            <div class='listItem'>
-                                <img src='../Images/ProductImgs/" . $row["img"] ."'/>
+                        ";
+                        } else {
+                            echo "
+                            <div class='listBody'>
+                                <div class='listItem'>
+                                    <p> " . $row["name"] . "
+                                </div>
+                                
+                                <div class='listItem'>
+                                    <img src='../Images/ProductImgs/" . $row["img"] . "'/>
+                                </div>
+                                
+                                <div class='listItem'>
+                                    <p> " . $row["price"] . " AED
+                                </div>
+                            
                             </div>
-                            <div class='listItem'>
-                                <p> " . $row["name"] . "
-                            </div>
-                            <div class='listItem'>
-                                <p> " . $row["price"] . "
-                            </div>
-                        
-                        </div>
-                    ";
+                        ";
+                        }
                     }
                 } else {
                     echo "No Products Found";
                 }
                 ?>
 
-                
+
 
             </div>
 

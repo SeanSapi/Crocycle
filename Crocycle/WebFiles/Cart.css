@@ -233,7 +233,9 @@ h3 {
 
 
 .rciptWrap {
+  overflow: hidden;
   display: flex;
+  border-radius: 15px;
   flex-direction: column;
   font-family: MontR;
 }
@@ -241,6 +243,7 @@ h3 {
 .listHead {
   display: flex;
   justify-content: center;
+  background-color: #bfa47f;
   height: 100px;
 }
 
@@ -254,16 +257,27 @@ h3 {
 .listBody {
   display: flex;
   justify-content: center;
+  padding: 15px;
+  margin-bottom: 5px;
+  height: 100px;
+}
+
+.listBody2 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #bfa47f;
   margin-bottom: 5px;
   height: 100px;
 }
 
 .listItem {
   width: 300px;
+  text-indent: 10px;
 }
 
 .listItem img {
   height: 100px;
   width: 100px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
