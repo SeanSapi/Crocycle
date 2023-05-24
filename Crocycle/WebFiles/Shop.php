@@ -524,7 +524,7 @@ session_start();
     <div>
       <h1>LINKS</h1>
       <hr>
-      <li><a href="../Index.php">Home</a></li>
+      <li><a href="../index.php">Home</a></li>
       <li><a href="../WebFiles/Shop.php">Shop</a></li>
       <li><a href="../WebFiles/About.php">About</a> </li>
     </div>
