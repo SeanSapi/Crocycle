@@ -94,6 +94,9 @@ include "connection.php";
                     Image
                 </p>
                 <p>
+                    Size
+                </p>
+                <p>
                     Quantity
                 </p>
                 <p>
@@ -111,11 +114,81 @@ include "connection.php";
 
                 $total = 0;
 
-                $loop = 0;
+                if ((isset($_SESSION["NewItems"]) && (sizeof($_SESSION["NewItems"]) > 0))) {
 
-                // var_dump($_SESSION["NewItems"]);
+                    for ($loop = 0; $loop < sizeof($_SESSION["NewItems"]); $loop++) {
+
+                        if (($loop % 2) == 0) {
+
+
+
+                            echo "
+                            <div class='listBody'>
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][0] . " </p>
+                                </div>
+                                <div class='listItem'>
+                                <img src='../Images/ProductImgs/" . $_SESSION["NewItems"][$loop][1] . "'/>
+                                </div>
+                                
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][2] . " </p>
+                                </div>
+    
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][3] . " </p>
+                                </div>
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][4] . " AED </p>
+                                </div>
+    
+                            </div>
+                            ";
+                        } else {
+                            echo "
+                            <div class='listBody2'>
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][0] . " </p>
+                                </div>
+
+                                <div class='listItem'>
+                                <img src='../Images/ProductImgs/" . $_SESSION["NewItems"][$loop][1] . "'/>
+                                </div>
+                                
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][2] . " </p>
+                                </div>
+    
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][2] . " </p>
+                                </div>
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][3] . " AED </p>
+                                </div>
+                                <div class='listItem'>
+                                <p>  " . $_SESSION["NewItems"][$loop][4] . " AED </p>
+                                </div>
+    
+                            </div>
+                            
+                            ";
+                        }
+                        $total = $total += ($_SESSION["NewItems"][$loop][4] * $_SESSION["NewItems"][$loop][3]);
+                    }
+
+                } else {
+                    echo "
+                    <div class='listBody'>
+                    <div class='listItem'>
+                    <p>  No items in the Cart! </p>
+                    </div>
+                    </div>";
+                }
+
+
                 /*
-                While ($loop <= $_SESSION["itemNo"]) {
+                // var_dump($_SESSION["NewItems"]);
+                while ($loop <= $_SESSION["itemNo"]) {
                 $loop++;
                 $total = ($total + ($_SESSION["NewItems"][$loop][2] * $_SESSION["NewItems"][$loop][3]));
                 //Header first div, Table items below
@@ -166,68 +239,66 @@ include "connection.php";
                 </div>
                 ";
                 }
-                
                 }
                 */
+                /*
                 if (mysqli_num_rows($result) > 0) {
-                    $loop = 0;
-                    while ($row = $result->fetch_assoc()) {
-                        $loop++;
-
-                        $total = ($total + ($row["price"] * $row["quantity"]));
-
-                        //Header first div, Table items below
+                $loop = 0;
+                while ($row = $result->fetch_assoc()) {
+                $loop++;
+                $total = ($total + ($row["price"] * $row["quantity"]));
+                //Header first div, Table items below
                 
-                        //<div class='listItem'>
-                        //<p> " . $row["id"] . "
-                        //</div>
-                        if (($loop % 2) == 0) {
-                            echo "
-                            <div class='listBody2'>
-                                <div class='listItem'>
-                                    <p> " . $row["name"] . "
-                                </div>
-                                
-                                <div class='listItem'>
-                                    <img src='../Images/ProductImgs/" . $row["img"] . "'/>
-                                </div>
-                                
-                                <div class='listItem'>
-                                    <p> " . $row["quantity"] . " Pcs
-                                </div>
-                                
-                                <div class='listItem'>
-                                    <p> " . $row["price"] . " AED
-                                </div>
-                            
-                            </div>
-                        ";
-                        } else {
-                            echo "
-                            <div class='listBody'>
-                                <div class='listItem'>
-                                    <p> " . $row["name"] . "
-                                </div>
-                                
-                                <div class='listItem'>
-                                    <img src='../Images/ProductImgs/" . $row["img"] . "'/>
-                                </div>
-                                
-                                <div class='listItem'>
-                                    <p> " . $row["quantity"] . " Pcs
-                                </div>
-                                
-                                <div class='listItem'>
-                                    <p> " . $row["price"] . " AED
-                                </div>
-                            
-                            </div>
-                        ";
-                        }
-                    }
+                //<div class='listItem'>
+                //<p> " . $row["id"] . "
+                //</div>
+                if (($loop % 2) == 0) {
+                echo "
+                <div class='listBody2'>
+                <div class='listItem'>
+                <p> " . $row["name"] . "
+                </div>
+                
+                <div class='listItem'>
+                <img src='../Images/ProductImgs/" . $row["img"] . "'/>
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $row["quantity"] . " Pcs
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $row["price"] . " AED
+                </div>
+                
+                </div>
+                ";
                 } else {
-                    echo "No Products Found";
+                echo "
+                <div class='listBody'>
+                <div class='listItem'>
+                <p> " . $row["name"] . "
+                </div>
+                
+                <div class='listItem'>
+                <img src='../Images/ProductImgs/" . $row["img"] . "'/>
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $row["quantity"] . " Pcs
+                </div>
+                
+                <div class='listItem'>
+                <p> " . $row["price"] . " AED
+                </div>
+                
+                </div>
+                ";
                 }
+                }
+                } else {
+                echo "No Products Found";
+                }*/
                 ?>
 
             </div>
@@ -237,7 +308,27 @@ include "connection.php";
                     <!-- input php action here -->
                     <?php echo "Total Price: <b>" . $total . "</b> AED" ?>
 
-                    <a class="checkout-button" href="Checkout.html"> Checkout </a>
+                    <button class="checkout-button"
+                        onclick="<?php $_SESSION["NewItems"] = array_diff($_SESSION["NewItems"], $_SESSION["NewItems"]); ?>">
+                        Clear Cart </button>
+
+
+                        <?php
+                        if ((isset($_SESSION["NewItems"]) && (sizeof($_SESSION["NewItems"]) > 0))) {
+
+                            echo "
+                            <a class='checkout-button' href='Checkout.html'> Checkout </a> 
+                            ";
+                        } else{
+                            
+                            echo "
+                            <a class='checkout-button grey' > Checkout </a> 
+                            ";
+                        }
+                         
+
+
+                    ?>
 
                 </div>
             </div>

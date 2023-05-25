@@ -270,3 +270,7 @@ span {
   flex-direction: row;
   justify-content: space-between;
 }
+.signStat button{
+  background:transparent;
+  border:none;
+}

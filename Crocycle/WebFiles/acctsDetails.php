@@ -112,9 +112,9 @@ if (!isset($_SESSION['loggedin'])) {
                         <br><br>
                         <div class="signStat">
 
-                            <a href="history.back()">
+                            <button onclick="history.back()">
                                 <input class="btn" type="submit" name="signin" id="signin" value="BACK">
-                            </a>
+                            </button>
                             
 
                             <a href="../WebFiles/PurePHP/logout.php">

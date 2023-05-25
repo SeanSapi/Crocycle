@@ -12,6 +12,13 @@ include 'connection.php';
     <link rel="stylesheet" href="../Webfiles/ProductPages/productemp.css">
     <link rel="stylesheet" href="../WebFiles/headerfooter.css">
 
+    <script>
+        function SelectedSize(test) {
+            //alert(test);
+            document.getElementById("Quant").value = test;
+        };
+    </script>
+
 </head>
 <!-- import stylesheet mainstyles in head-->
 
@@ -33,11 +40,11 @@ include 'connection.php';
                     <h3>HOME</h3>
                 </a>
 
-                <a href="../WebFiles/Products.html">
+                <a href="../WebFiles/Shop.php">
                     <h3>SHOP</h3>
                 </a>
 
-                <a href="../WebFiles/About.html">
+                <a href="../WebFiles/About.php">
                     <h3>ABOUT US</h3>
                 </a>
                 <?php
@@ -70,8 +77,6 @@ include 'connection.php';
         <!-- Main Page Body -->
 
         <?php
-
-        if (isset($_SESSION["Req"])) {}
 
         $req = $_SESSION["Req"];
 
@@ -106,17 +111,17 @@ include 'connection.php';
 
                     <div class="sizeOptions">
 
-                        <button class="sizeOp">XXS</button>
-                        <button class="sizeOp">XS</button>
-                        <button class="sizeOp">S</button>
-                        <button class="sizeOp">M</button>
-                        <button class="sizeOp">L</button>
-                        <button class="sizeOp">XL</button>
-                        <button class="sizeOp">XXL</button>
-                        <button class="sizeOp">3XL</button>
-                        <button class="sizeOp">4XL</button>
-                        <button class="sizeOp">5XL</button>
-                        <button class="sizeOp">6XL</button>
+                        <button onclick="SelectedSize(this.value)" id="XXS" class="sizeOp" name="XXS" value="XXS">XXS</button>
+                        <button onclick="SelectedSize(this.value)" id="XS" class="sizeOp" name="XS" value="XS">XS</button>
+                        <button onclick="SelectedSize(this.value)" id="S" class="sizeOp" name="S" value="S">S</button>
+                        <button onclick="SelectedSize(this.value)" id="M" class="sizeOp" name="M" value="M">M</button>
+                        <button onclick="SelectedSize(this.value)" id="L" class="sizeOp" name="L" value="L">L</button>
+                        <button onclick="SelectedSize(this.value)" id="XL" class="sizeOp" name="XL" value="XL">XL</button>
+                        <button onclick="SelectedSize(this.value)" id="XXL" class="sizeOp" name="XXL" value="XXL">XXL</button>
+                        <button onclick="SelectedSize(this.value)" id="3XL" class="sizeOp" name="3XL" value="3XL">3XL</button>
+                        <button onclick="SelectedSize(this.value)" id="4XL" class="sizeOp" name="4XL" value="4XL">4XL</button>
+                        <button onclick="SelectedSize(this.value)" id="5XL" class="sizeOp" name="5XL" value="5XL">5XL</button>
+                        <button onclick="SelectedSize(this.value)" id="6XL" class="sizeOp" name="6XL" value="6XL">6XL</button>
 
                     </div>
                     <?php
@@ -139,8 +144,8 @@ include 'connection.php';
 
                     <form class="quantityWrap" action="PurePHP/ProductDB.php" method="post">
                         <input type="number" class="quantity" id="quantity" min="1" max="<?= $item["quantity"] ?>"
-                            value="1">
-                        <input type="hidden" value='<?= $item["id"] ?>'>
+                            name="quantity" value="1">
+                        <input type="hidden" value="M" name="ItmSize" id="Quant">
 
                         <!-- The Number input goes from 1 - amount of the quantity left and doen't allow for keyboard input-->
 
