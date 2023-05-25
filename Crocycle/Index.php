@@ -248,7 +248,7 @@ if (!isset($_SESSION['loggedin'])) {
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
-                  <input type="hidden" name="ProductID" value='7'>
+                  <input type="hidden" name="ProductID" value='8'>
                   <button type="submit">VIEW</button>
 
                 </form>

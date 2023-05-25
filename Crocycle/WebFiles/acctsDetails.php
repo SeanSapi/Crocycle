@@ -40,7 +40,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <form class="user" action="" method="post" autocomplete="off"> <!-- username and profile picture -->
 
                     <span class="userstuff">
-                        <img class="pfp" src="../Images/StockImages/PlaceHldr.png">
+                        <img class="pfp" src="../Images/Logo/crocyclelogo.png">
                         <div class="pfptxt">
                             <h2> CHANGE </h2>
                         </div>

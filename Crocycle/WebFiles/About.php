@@ -34,21 +34,12 @@ session_start();
         <a href="../WebFiles/Shop.php">
           <h3>SHOP</h3>
         </a>
-        <?php
-        // check if user is not logged in
-        if (!isset($_SESSION['loggedin'])) {
-          echo "
-            <a href='../WebFiles/LoginPage.php'>
-              <h3>LOG IN/SIGN UP</h3>
-            </a>";
-        } else {
-          echo "
-              <a href='../WebFiles/acctsDetails.php'>
-                <h3>YOUR ACCOUNT</h3>
-              </a>";
 
-        }
-        ?>
+        <a href="#">
+            
+          <h3>ABOUT US</h3>
+        </a>
+</a>
 
         <?php
         // check if user is not logged in
