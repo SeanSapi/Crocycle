@@ -71,7 +71,9 @@ include 'connection.php';
 
         <?php
 
-        $req = $_SESSION["IDReq"];
+        if (isset($_SESSION["Req"])) {}
+
+        $req = $_SESSION["Req"];
 
         $Products = "SELECT id, name, price, quantity, img FROM cartitems WHERE id = $req";
 

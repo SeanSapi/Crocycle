@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+
+$_SESSION["IDReq"] = 0;
 ?>
 
 <!DOCTYPE html>
@@ -69,7 +72,7 @@ session_start();
         }
         ?>
 
-        <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
+        <a href="cart.php"><img src="../Images/Icons/Basket.png" /> </a>
 
       </div>
 
@@ -138,7 +141,11 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/CrochetTop.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Tops/ProductCrochetTop.html">VIEW</a>
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='13'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -154,18 +161,17 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/Croshirt.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Tops/ProductCroshirt.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='14'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
 
         </div>
-
-
-
-
-
-
 
         <div class="swiper-slide">
           <!-- Swiper Carousel Slide 6 -->
@@ -175,7 +181,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/WomanTop.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Tops/ProductWomanTop.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='17'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -210,7 +221,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/Beanie.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Headpiece/ProductBeanie.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='1'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -226,7 +242,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Headpiece/ProductFlowerHat.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='6'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -242,7 +263,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/Headwear.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Headpiece/ProductHeadwear.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='7'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -257,7 +283,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
               <div class="slider-txt">
-                <a href="Crocycle/WebFiles/ProductPages/Headpiece/ProductCap.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='8'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -290,7 +321,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/RedSweater.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Tops/ProductRedSweater.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='16'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -306,7 +342,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/GraySweater.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Tops/ProductGraySweater.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='15'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -322,7 +363,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Tops/Sweater.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Tops/ProductSweater.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='18'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -362,7 +408,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/BallEar.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Accessories/ProductBallEar.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='3'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -378,7 +429,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/FlowerEar.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Accessories/ProductFlowerEar.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='4'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -394,7 +450,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/ShellEar.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Accessories/ProductShellEar.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='2'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -409,7 +470,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/Accessories/YarnGlove.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/Accessories/ProductYarnGlove.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='5'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -445,7 +511,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/PetItems/DogCoat.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/PetItems/ProductDogCoat.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='9'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -461,7 +532,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/PetItems/DogCoatBlue.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/PetItems/ProductDogCoatBlue.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='10'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -477,7 +553,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/PetItems/DogCoatPink.png"> </img>
               <div class="slider-txt">
-                <a href="../WebFiles/ProductPages/PetItems/ProductDogCoatPink.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='11'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -492,7 +573,12 @@ session_start();
             <div class="slider-img">
               <img src="../Images/ProductImgs/PetItems/DogPurpleCoat.png"> </img>
               <div class="slider-txt">
-                <a href="../Crocycle/WebFiles/ProductPages/PetItems/ProductDogPurpleCoat.html">VIEW</a>
+
+                <form action="sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='7'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>

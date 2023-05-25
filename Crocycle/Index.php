@@ -4,6 +4,7 @@ session_start();
 if (!isset($_SESSION['loggedin'])) {
   header('Location: WebFiles/LoginPage.php'); // redirect to login page
   exit;
+
 }
 ?>
 
@@ -101,10 +102,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Headpiece/Beanie.png"> </img>
               <div class="slider-txt">
-                <?php
-                 $_SESSION["IDReq"] = 1;
-                 echo "<a href='WebFiles\ProductPage.php'>VIEW</a>"
-                ?>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='1'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -120,7 +123,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Headpiece/Headwear.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='7'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -136,7 +144,13 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Tops/Croshirt.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='14'>
+                  <button type="submit">VIEW</button>
+
+                </form>
+                </a>
               </div>
             </div>
           </div>
@@ -151,7 +165,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Accessories/BallEar.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='3'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -166,7 +185,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='6'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -181,7 +205,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Accessories/YarnGlove.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='5'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -196,7 +225,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Accessories/FlowerEar.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='4'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
@@ -212,7 +246,12 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="slider-img">
               <img src="Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
               <div class="slider-txt">
-                <a href="#">VIEW</a>
+
+                <form action="./WebFiles/sendvalue.php" method="POST">
+                  <input type="hidden" name="ProductID" value='7'>
+                  <button type="submit">VIEW</button>
+
+                </form>
               </div>
             </div>
           </div>
