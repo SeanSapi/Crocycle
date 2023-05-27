@@ -40,12 +40,12 @@ if ($stmt = $conn->prepare('SELECT id, password FROM crocaccounts WHERE username
                // put the "error element must trigger" here  
                // - Create element > input exit text in element
             $_SESSION["statMessage"] = "Invalid Password!";
-            header ("Location: LoginPage.php");
+            header ('Location: LoginPage.php');
         }
     } else {
         // code that runs if the username is WRONG
             $_SESSION["statMessage"] = "Invalid Username!";
-            header ("Location: LoginPage.php");
+            header ('Location: LoginPage.php');
     }
 
 

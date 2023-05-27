@@ -36,15 +36,15 @@ include 'connection.php';
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
-                <a href="../Index.php">
+                <a href="../index.php">
                     <h3>HOME</h3>
                 </a>
 
-                <a href="../WebFiles/Shop.php">
+                <a href="Shop.php">
                     <h3>SHOP</h3>
                 </a>
 
-                <a href="../WebFiles/About.php">
+                <a href="About.php">
                     <h3>ABOUT US</h3>
                 </a>
                 <?php

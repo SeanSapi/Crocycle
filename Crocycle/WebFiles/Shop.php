@@ -39,22 +39,9 @@ $_SESSION["IDReq"] = 0;
           <h3>SHOP</h3>
         </a>
 
-        <?php
-        // check if user is not logged in
-        if (!isset($_SESSION['loggedin'])) {
-          echo "
-            <a href='../WebFiles/LoginPage.php'>
-              <h3>LOG IN/SIGN UP</h3>
-            </a>";
-        } else {
-          echo "
-              <a href='../WebFiles/acctsDetails.php'>
-                <h3>YOUR ACCOUNT</h3>
-              </a>";
-
-        }
-        ?>
-
+        <a href="WebFiles/About.php">
+          <h3>ABOUT US</h3>
+        </a>
 
         <?php
         // check if user is not logged in

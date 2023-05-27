@@ -15,7 +15,7 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
   <title>Crocycle</title>
   <link rel="stylesheet" href="WebFiles/headerfooter.css">
-  <link rel="stylesheet" href="Webfiles/home.css">
+  <link rel="stylesheet" href="WebFiles/home.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 </head>
@@ -63,7 +63,7 @@ if (!isset($_SESSION['loggedin'])) {
         ?>
 
 
-        <a href="WebFiles\Cart.php"><img src="Images/Icons/Basket.png" /> </a>
+        <a href="WebFiles\Cart.php"><img src="../Images/Icons/Basket.png" /> </a>
 
       </div>
 

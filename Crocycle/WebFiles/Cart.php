@@ -2,6 +2,7 @@
 
 include "connection.php";
 
+
 ?>
 <!-- This is the html -->
 <!DOCTYPE html>
@@ -158,12 +159,9 @@ include "connection.php";
                                 <div class='listItem'>
                                 <p>  " . $_SESSION["NewItems"][$loop][2] . " </p>
                                 </div>
-    
+                                
                                 <div class='listItem'>
-                                <p>  " . $_SESSION["NewItems"][$loop][2] . " </p>
-                                </div>
-                                <div class='listItem'>
-                                <p>  " . $_SESSION["NewItems"][$loop][3] . " AED </p>
+                                <p>  " . $_SESSION["NewItems"][$loop][3] . " </p>
                                 </div>
                                 <div class='listItem'>
                                 <p>  " . $_SESSION["NewItems"][$loop][4] . " AED </p>
@@ -308,25 +306,24 @@ include "connection.php";
                     <!-- input php action here -->
                     <?php echo "Total Price: <b>" . $total . "</b> AED" ?>
 
-                    <button class="checkout-button"
-                        onclick="<?php $_SESSION["NewItems"] = array_diff($_SESSION["NewItems"], $_SESSION["NewItems"]); ?>">
-                        Clear Cart </button>
+                    <form class="checkout-button" action="clearcart.php" method="post">
+                        <input type="submit" name="clear" value="Clear Cart">
+                        
+                    </form>
 
 
-                        <?php
-                        if ((isset($_SESSION["NewItems"]) && (sizeof($_SESSION["NewItems"]) > 0))) {
+                    <?php
+                    if ((isset($_SESSION["NewItems"]) && (sizeof($_SESSION["NewItems"]) > 0))) {
 
-                            echo "
+                        echo "
                             <a class='checkout-button' href='Checkout.html'> Checkout </a> 
                             ";
-                        } else{
-                            
-                            echo "
+                    } else {
+
+                        echo "
                             <a class='checkout-button grey' > Checkout </a> 
                             ";
-                        }
-                         
-
+                    }
 
                     ?>
 

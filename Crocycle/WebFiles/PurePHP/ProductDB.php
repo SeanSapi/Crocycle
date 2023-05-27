@@ -31,7 +31,7 @@ newArray($item["name"],$item["img"], $Size ,$Amount, $ItmPrc);
 
 $item = $result->fetch_assoc();
 
-header('ProductPage.php');
+header('Location: ../Shop.php');
 // Commented line to check for product items in the array
 // var_dump($_SESSION["NewItems"]);
 
