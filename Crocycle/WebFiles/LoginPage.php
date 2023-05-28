@@ -31,7 +31,7 @@ if (isset($_SESSION['loggedin'])) {
         <div class="section">
 
             <div class="parallax">
-                <img src="../Images/StockImages/parallimg.png" alt="Parallax Background" />
+                <img src="../Images/stockImages/parallimg.png" alt="Parallax Background" />
             </div>
 
             <div class="inputsection">

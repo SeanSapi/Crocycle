@@ -27,7 +27,7 @@ include "connection.php";
 
             <!-- a hrefs lead to #, replace with the actual links-->
 
-            <img src="../Images/Logo/CrocycleLogo.png" height="75px" width="75px" class="croLogo"> </img>
+            <img src="../Images/Logo/crocyclelogo.png" height="75px" width="75px" class="croLogo"> </img>
 
             <div class="options">
                 <!-- Hyperlinks that transfers you to other pages -->
@@ -59,7 +59,7 @@ include "connection.php";
                 }
                 ?>
 
-                <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
+                <a href="#"><img src="../Images/icons/basket.png" /> </a>
 
             </div>
 
@@ -352,15 +352,15 @@ include "connection.php";
         <div>
             <h1>FOLLOW</h1>
             <hr>
-            <a href="https://www.facebook.com/profile.php?id=100092578235204"><img
-                    src="../Images/Socials/Facebook.png"></a>
-            <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
-            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
+            <a href="https://www.facebook.com/profile.php?id=100092578235204" target="_blank"><img
+                    src="../Images/Socials/facebook.png"></a>
+            <a href="https://www.instagram.com/crocycled/" target="_blank"><img src="../Images/Socials/instagram.png"></a>
+            <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc" target="blank"><img
                     src="../Images/Socials/TikTok.png"></a>
         </div>
 
         <div class="Foot Logo">
-            <img src="../Images/Logo/CrocycleLogo.png" height="50%" width="50%"></img>
+            <img src="../Images/Logo/crocyclelogo.png" height="50%" width="50%"></img>
             <p>@Crocycle 2023</p>
 
         </div>

@@ -23,7 +23,7 @@ session_start();
 
       <!-- a hrefs lead to #, replace with the actual links-->
 
-      <img src="../Images/Logo/CrocycleLogo.png" height="75px" width="75px" class="croLogo"> </img>
+      <img src="../Images/Logo/crocyclelogo.png" height="75px" width="75px" class="croLogo"> </img>
 
       <div class="options">
         <!-- Hyperlinks that transfers you to other pages -->
@@ -35,7 +35,7 @@ session_start();
           <h3>SHOP</h3>
         </a>
 
-        <a href="#">
+        <a href="../WebFiles/About.php">
             
           <h3>ABOUT US</h3>
         </a>
@@ -57,7 +57,7 @@ session_start();
         }
         ?>
 
-        <a href="#"><img src="../Images/Icons/Basket.png" /> </a>
+        <a href="#"><img src="../Images/icons/basket.png" /> </a>
 
       </div>
 
@@ -91,7 +91,7 @@ session_start();
 
     <div class="staffimg">
 
-      <img src="../Images/ourTeam/Sean.png">
+      <img src="../Images/ourTeam/sean.png">
 
       <h3>Sean Patrick A. Sapitanan</h3>
       <p>CEO</p>
@@ -100,7 +100,7 @@ session_start();
 
     <div class="staffimg">
 
-      <img src="../Images/ourTeam/John.jpg">
+      <img src="../Images/ourTeam/john.png">
 
       <h3>John Andre Y. <br> Federiso</h3>
       <p>Programmer/Designer</p>
@@ -160,7 +160,7 @@ session_start();
   <!-- Description -->
   <div class="banner2">
 
-    <img src="../Images/StockImages/ParallImg.png"> </img>
+    <img src="../Images/stockImages/parallimg.png"> </img>
 
     <div class="ab">
       <h1>OUR BUSINESS</h1>
@@ -220,13 +220,13 @@ session_start();
     <div>
       <h1>FOLLOW</h1>
       <hr>
-      <a><img src="../Images/Socials/Facebook.png"></a>
-      <a><img src="../Images/Socials/Instagram.png"></a>
-      <a><img src="../Images/Socials/TikTok.png"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092578235204" target="blank"><img src="../Images/Socials/facebook.png"></a>
+      <a href="https://www.instagram.com/crocycled/" target="blank"><img src="../Images/Socials/instagram.png"></a>
+      <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc" target="blank"><img src="../Images/Socials/TikTok.png"></a>
     </div>
 
     <div class="Foot Logo">
-      <img src="../Images/Logo/CrocycleLogo.png" height="50%" width="50%"></img>
+      <img src="../Images/Logo/crocyclelogo.png" height="50%" width="50%"></img>
       <p>@Crocycle 2023</p>
 
     </div>

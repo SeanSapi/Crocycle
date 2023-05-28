@@ -63,11 +63,11 @@ if (!isset($_SESSION['loggedin'])) {
         ?>
 
 
-        <a href="WebFiles\Cart.php"><img src="../Images/Icons/Basket.png" /> </a>
+        <a href="WebFiles\Cart.php"><img src="../Images/icons/basket.png" /> </a>
 
       </div>
 
-    </div> w
+    </div> 
 
     <div class="welcome">
       <!-- div class for the "Welcome to Crocycle" text on the banner-->
@@ -100,7 +100,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Headpiece/Beanie.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/beanie.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -121,7 +121,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Headpiece/Headwear.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/headwear.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -142,7 +142,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Tops/Croshirt.png"> </img>
+              <img src="Images/ProductImgs/Tops/croshirt.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -163,7 +163,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Accessories/BallEar.png"> </img>
+              <img src="Images/ProductImgs/Accessories/ballear.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -183,7 +183,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/flowerhat.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -203,7 +203,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Accessories/YarnGlove.png"> </img>
+              <img src="Images/ProductImgs/Accessories/yarnglove.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -223,7 +223,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Accessories/FlowerEar.png"> </img>
+              <img src="Images/ProductImgs/Accessories/flowerear.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -244,7 +244,7 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
+              <img src="Images/ProductImgs/Headpiece/newsboycap.png"> </img>
               <div class="slider-txt">
 
                 <form action="./WebFiles/sendvalue.php" method="POST">
@@ -264,8 +264,6 @@ if (!isset($_SESSION['loggedin'])) {
 
 
     </div>
-
-
 
 
 
@@ -290,7 +288,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     <div class="imgdiv">
 
-      <img src="Images/StockImages/Handknitting.png"> </img>
+      <img src="Images/stockImages/Handknitting.png"> </img>
     </div>
 
   </div>
@@ -300,7 +298,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     <div class="imgdiv2">
       <div class="bigLeft">
-        <img src="Images/ProductImgs/Tops/RedSweater.png"> </img>
+        <img src="Images/ProductImgs/Tops/redsweater.png"> </img>
       </div>
 
       <div class="smallRight">
@@ -310,7 +308,7 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
 
         <div>
-          <img src="Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
+          <img src="Images/ProductImgs/Headpiece/flowerhat.png"> </img>
         </div>
 
       </div>
@@ -346,18 +344,18 @@ if (!isset($_SESSION['loggedin'])) {
       <!-- imgdiv2 class-->
       <div class="bigLeft">
         <!-- class bigLeft for the big image on the left -->
-        <img src="Images/ProductImgs/Accessories/YarnGlove.png"> </img>
+        <img src="Images/ProductImgs/Accessories/yarnglove.png"> </img>
       </div>
 
       <div class="smallRight">
         <!-- class smallRight for the two small images on the right -->
 
         <div>
-          <img src="Images/ProductImgs/Accessories/BallEar.png"> </img>
+          <img src="Images/ProductImgs/Accessories/ballear.png"> </img>
         </div>
 
         <div>
-          <img src="Images/ProductImgs/Accessories/FlowerEar.png"> </img>
+          <img src="Images/ProductImgs/Accessories/flowerear.png"> </img>
         </div>
 
       </div>
@@ -379,7 +377,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div>
       <h1>LINKS</h1>
       <hr>
-      <li><a href="WebFiles/Index.php">Home</a></li>
+      <li><a href="WebFiles/index.php">Home</a></li>
       <li><a href="WebFiles/Shop.php">Shop</a></li>
       <li><a href="WebFiles/About.php">About</a> </li>
     </div>
@@ -387,9 +385,9 @@ if (!isset($_SESSION['loggedin'])) {
     <div>
       <h1>FOLLOW</h1>
       <hr>
-      <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="Images/Socials/Facebook.png"></a>
-      <a href="https://www.instagram.com/crocycled/"><img src="Images/Socials/Instagram.png"></a>
-      <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
+      <a href="https://www.facebook.com/profile.php?id=100092578235204" target="_blank"><img src="Images/Socials/facebook.png"></a>
+      <a href="https://www.instagram.com/crocycled/" target="_blank"><img src="Images/Socials/instagram.png"></a>
+      <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc" target="_blank"><img
           src="Images/Socials/TikTok.png"></a>
     </div>
 
@@ -399,9 +397,6 @@ if (!isset($_SESSION['loggedin'])) {
 
     </div>
   </footer>
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 

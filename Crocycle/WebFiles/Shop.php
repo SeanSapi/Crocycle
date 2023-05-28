@@ -31,7 +31,7 @@ $_SESSION["IDReq"] = 0;
 
       <div class="options">
         <!-- Hyperlinks that transfers you to other pages -->
-        <a href="../index.php">
+        <a href="WebFiles/index.php">
           <h3>HOME</h3>
         </a>
 
@@ -59,7 +59,7 @@ $_SESSION["IDReq"] = 0;
         }
         ?>
 
-        <a href="cart.php"><img src="../Images/Icons/Basket.png" /> </a>
+        <a href= "../WebFiles/Cart.php"> <img src ="../Images/icons/basket.png" /> </a>
 
       </div>
 
@@ -126,7 +126,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/CrochetTop.png"> </img>
+              <img src="../Images/ProductImgs/Tops/crochettop.png"> </img>
               <div class="slider-txt">
                 <form action="sendvalue.php" method="POST">
                   <input type="hidden" name="ProductID" value='13'>
@@ -146,7 +146,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/Croshirt.png"> </img>
+              <img src="../Images/ProductImgs/Tops/croshirt.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -166,7 +166,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/WomanTop.png"> </img>
+              <img src="../Images/ProductImgs/Tops/womantop.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -206,7 +206,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/Beanie.png"> </img>
+              <img src="../Images/ProductImgs/Headpiece/beanie.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -227,7 +227,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/FlowerHat.png"> </img>
+              <img src="../Images/ProductImgs/Headpiece/flowerhat.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -248,7 +248,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/Headwear.png"> </img>
+              <img src="../Images/ProductImgs/Headpiece/headwear.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -268,7 +268,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Headpiece/NewsboyCap.png"> </img>
+              <img src="../Images/ProductImgs/Headpiece/newsboycap.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -306,7 +306,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/RedSweater.png"> </img>
+              <img src="../Images/ProductImgs/Tops/redsweater.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -327,7 +327,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/GraySweater.png"> </img>
+              <img src="../Images/ProductImgs/Tops/graysweater.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -348,7 +348,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Tops/Sweater.png"> </img>
+              <img src="../Images/ProductImgs/Tops/sweater.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -393,7 +393,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/BallEar.png"> </img>
+              <img src="../Images/ProductImgs/Accessories/ballear.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -414,7 +414,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/FlowerEar.png"> </img>
+              <img src="../Images/ProductImgs/Accessories/flowerear.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -435,7 +435,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/ShellEar.png"> </img>
+              <img src="../Images/ProductImgs/Accessories/shellear.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -455,7 +455,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/Accessories/YarnGlove.png"> </img>
+              <img src="../Images/ProductImgs/Accessories/yarnglove.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -496,7 +496,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel Item 1 -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/PetItems/DogCoat.png"> </img>
+              <img src="../Images/ProductImgs/PetItems/dogcoat.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -517,7 +517,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/PetItems/DogCoatBlue.png"> </img>
+              <img src="../Images/ProductImgs/PetItems/dogcoatblue.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -538,7 +538,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/PetItems/DogCoatPink.png"> </img>
+              <img src="../Images/ProductImgs/PetItems/dogcoatpink.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -558,7 +558,7 @@ $_SESSION["IDReq"] = 0;
           <div class="slider-box">
             <!-- Swiper Carousel box -->
             <div class="slider-img">
-              <img src="../Images/ProductImgs/PetItems/DogPurpleCoat.png"> </img>
+              <img src="../Images/ProductImgs/PetItems/dogpurplecoat.png"> </img>
               <div class="slider-txt">
 
                 <form action="sendvalue.php" method="POST">
@@ -605,14 +605,14 @@ $_SESSION["IDReq"] = 0;
     <div>
       <h1>FOLLOW</h1>
       <hr>
-      <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/Facebook.png"></a>
-      <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
+      <a href="https://www.facebook.com/profile.php?id=100092578235204"><img src="../Images/Socials/facebook.png"></a>
+      <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/instagram.png"></a>
       <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
           src="../Images/Socials/TikTok.png"></a>
     </div>
 
     <div class="Foot Logo">
-      <img src="../Images/Logo/CrocycleLogo.png" height="50%" width="50%"></img>
+      <img src="../Images/Logo/crocyclelogo.png" height="50%" width="50%"></img>
       <p>@Crocycle 2023</p>
 
     </div>

@@ -9,7 +9,7 @@ include 'connection.php';
 
 <head>
     <title>Crocyle</title>
-    <link rel="stylesheet" href="../Webfiles/ProductPages/productemp.css">
+    <link rel="stylesheet" href="../WebFiles/ProductPages/productemp.css">
     <link rel="stylesheet" href="../WebFiles/headerfooter.css">
 
     <script>
@@ -31,7 +31,7 @@ include 'connection.php';
 
             <!-- a hrefs lead to #, replace with the actual links-->
 
-            <img class="croLogo" src="../Images/Logo/CrocycleLogo.png" height="75px" width="75px" class="croLogo">
+            <img class="croLogo" src="../Images/Logo/crocyclelogo.png" height="75px" width="75px" class="croLogo">
             </img>
 
             <div class="options">
@@ -63,7 +63,7 @@ include 'connection.php';
                 }
                 ?>
 
-                <a href="Cart.php"><img src="../Images/Icons/Basket.png" /> </a>
+                <a href="Cart.php"><img src="../Images/icons/basket.png" /> </a>
 
 
             </div>
@@ -151,7 +151,7 @@ include 'connection.php';
 
                         <button class="cartButton">
                             Add to Basket &nbsp; &nbsp;
-                            <img src="../Images/Icons/Basket.png" />
+                            <img src="../Images/icons/basket.png" />
                         </button>
 
                     </form>
@@ -191,14 +191,14 @@ include 'connection.php';
             <h1>FOLLOW</h1>
             <hr>
             <a href="https://www.facebook.com/profile.php?id=100092578235204"><img
-                    src="../Images/Socials/Facebook.png"></a>
-            <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/Instagram.png"></a>
+                    src="../Images/Socials/facebook.png"></a>
+            <a href="https://www.instagram.com/crocycled/"><img src="../Images/Socials/instagram.png"></a>
             <a href="https://www.tiktok.com/@crocyclee?is_from_webapp=1&sender_device=pc"><img
                     src="../Images/Socials/TikTok.png"></a>
         </div>
 
         <div class="Foot Logo">
-            <img src="../Images/Logo/CrocycleLogo.png" height="50%" width="50%"></img>
+            <img src="../Images/Logo/crocyclelogo.png" height="50%" width="50%"></img>
             <p>@Crocycle 2023</p>
 
         </div>

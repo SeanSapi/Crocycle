@@ -116,10 +116,8 @@ if (!isset($_SESSION['loggedin'])) {
                                 <input class="btn" type="submit" name="signin" id="signin" value="BACK">
                             </button>
                             
-
                             <a href="../WebFiles/PurePHP/logout.php">
                                 <input class="btn" type="submit" name="signout" id="signout" value="LOG OUT">
-                    
 
                             </a>
                         </div>

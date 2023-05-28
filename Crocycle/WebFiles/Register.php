@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['loggedin'])) {
-    header('Location: ../index.php'); // redirect to login page
+    header('Location: ../../index.php'); // redirect to login page
     exit;
 }
 
@@ -15,7 +15,7 @@ if (isset($_SESSION['loggedin'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="../WebFiles/Register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -29,14 +29,14 @@ if (isset($_SESSION['loggedin'])) {
         <div class="section">
 
             <div class="parallax">
-                <img src="../Images/StockImages/parallimg.png" alt="Parallax Background" />
+                <img src="../Images/stockImages/parallimg.png" alt="Parallax Background" />
             </div>
 
             <div class="inputsection">
 
                 <h1>Register</h1>
 
-                <form class="inline" action="../WebFiles/PurePHP/registeruser.php" method="post" autocomplete="off">
+                <form class="inline" action="PurePHP/registeruser.php" method="post" autocomplete="off">
 
                     <div class="inputs">
                         <i class="fa fa-user icon"></i>
